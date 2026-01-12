@@ -88,8 +88,8 @@ const Contato = memo(() => {
               </svg>
               Falar via WhatsApp
             </a>
-            <p className="mt-5 text-sm text-center leading-relaxed" style={{color: '#6B7280'}}>
-              <span className="font-semibold" style={{color: '#1C1C1C'}}>(44) 9932-6286</span> · Segunda a sexta, horário comercial
+            <p className="mt-5 text-sm text-center leading-relaxed" style={{color: '#1C1C1C'}}>
+              <span className="font-semibold" style={{color: '#1C1C1C'}}>(44) 9932-6286</span> <span style={{color: '#1C1C1C'}}>· Segunda a sexta, horário comercial</span>
             </p>
           </div>
         </div>

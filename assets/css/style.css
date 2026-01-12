@@ -729,19 +729,47 @@ p {
 
 /* Seção Sobre - Texto branco (exceto textos específicos que devem ser pretos) */
 #sobre .sobre-text-white,
-#sobre p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #FFFFFF"]),
-#sobre h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]),
-#sobre h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]) {
+#sobre p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#sobre h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#sobre h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black) {
   color: #FFFFFF !important;
 }
 
-/* Garantir que textos específicos na seção Sobre fiquem pretos */
+/* Garantir que textos específicos na seção Sobre fiquem pretos desde o início */
 #sobre p[style*="color: #1C1C1C"],
 #sobre p[style*="color: #4A4A4A"],
+#sobre span[style*="color: #1C1C1C"],
+#sobre span[style*="color: #4A4A4A"],
 #sobre h3[style*="color: #1C1C1C"],
 #sobre a[style*="color: #1C1C1C"],
-#sobre a[style*="color: #FF7A00"] {
+#sobre .text-sm[style*="color: #1C1C1C"],
+#sobre .text-xs[style*="color: #4A4A4A"] {
   color: #1C1C1C !important;
+}
+
+#sobre .text-xs[style*="color: #4A4A4A"] {
+  color: #4A4A4A !important;
+}
+
+/* Garantir que textos específicos na seção Sobre fiquem pretos desde o início */
+#sobre p[style*="color: #1C1C1C"],
+#sobre p[style*="color: #4A4A4A"],
+#sobre span[style*="color: #1C1C1C"],
+#sobre span[style*="color: #4A4A4A"],
+#sobre h3[style*="color: #1C1C1C"],
+#sobre a[style*="color: #1C1C1C"],
+#sobre a[style*="color: #FF7A00"],
+#sobre .text-sm[style*="color: #1C1C1C"],
+#sobre .text-xs[style*="color: #4A4A4A"],
+#sobre article p[style*="color: #1C1C1C"],
+#sobre article p[style*="color: #4A4A4A"],
+#sobre article h3[style*="color: #1C1C1C"] {
+  color: #1C1C1C !important;
+}
+
+#sobre .text-xs[style*="color: #4A4A4A"],
+#sobre p[style*="color: #4A4A4A"] {
+  color: #4A4A4A !important;
 }
 
 #sobre p[style*="opacity"] {
@@ -750,10 +778,45 @@ p {
 
 /* Seção Contato - Texto branco (exceto textos específicos que devem ser pretos) */
 #contato .contato-text-white,
-#contato p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #9B9B9B"]):not([style*="color: #FFFFFF"]),
-#contato h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]),
-#contato h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]) {
+#contato p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #6B7280"]):not([style*="color: #9B9B9B"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#contato h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#contato h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black) {
   color: #FFFFFF !important;
+}
+
+/* Garantir que textos específicos na seção Contato fiquem pretos desde o início - REGRAS FORTES */
+#contato div[style*="background-color: #FFFFFF"] * {
+  color: inherit !important;
+}
+
+#contato p[style*="color: #1C1C1C"],
+#contato span[style*="color: #1C1C1C"],
+#contato h3[style*="color: #1C1C1C"],
+#contato a[style*="color: #1C1C1C"],
+#contato .text-xs[style*="color: #1C1C1C"],
+#contato .text-base[style*="color: #1C1C1C"],
+#contato .text-sm[style*="color: #1C1C1C"],
+#contato .text-xl[style*="color: #1C1C1C"],
+#contato .text-lg[style*="color: #1C1C1C"],
+#contato .text-2xl[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] h3[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] a[style*="color: #1C1C1C"] {
+  color: #1C1C1C !important;
+}
+
+#contato p[style*="color: #4A4A4A"] {
+  color: #4A4A4A !important;
+}
+
+#contato p[style*="color: #6B7280"],
+#contato span[style*="color: #6B7280"] {
+  color: #6B7280 !important;
+}
+
+#contato span[style*="color: #1C1C1C"] {
+  color: #1C1C1C !important;
 }
 
 /* Garantir que textos específicos na seção Contato fiquem pretos */
@@ -2048,7 +2111,39 @@ section[style*="background-color:#FFFFFF"] + section[style*="background-color:#F
 
 /* Garantir que todos os textos da seção de estatísticas fiquem brancos */
 section[style*="background: linear-gradient(135deg, #FF7A00"],
-section[style*="background:linear-gradient(135deg, #FF7A00"] {
+section[style*="background:linear-gradient(135deg, #FF7A00"],
+section[aria-label="Estatísticas e resultados"],
+section[aria-label*="Estatísticas"] {
+  color: #FFFFFF !important;
+}
+
+/* Garantir que título e descrição da seção de estatísticas sejam sempre visíveis */
+section[aria-label="Estatísticas e resultados"] .text-center.mb-20,
+section[aria-label="Estatísticas e resultados"] h2,
+section[aria-label="Estatísticas e resultados"] p,
+section[aria-label*="Estatísticas"] .text-center.mb-20,
+section[aria-label*="Estatísticas"] h2,
+section[aria-label*="Estatísticas"] p {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #FFFFFF !important;
+}
+
+section[aria-label="Estatísticas e resultados"] h2,
+section[aria-label*="Estatísticas"] h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1.5rem !important;
+  color: #FFFFFF !important;
+}
+
+section[aria-label="Estatísticas e resultados"] p,
+section[aria-label*="Estatísticas"] p {
+  font-size: clamp(1rem, 2vw, 1.25rem) !important;
+  line-height: 1.7 !important;
+  opacity: 0.95 !important;
   color: #FFFFFF !important;
 }
 
@@ -2303,20 +2398,46 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
   section[aria-label="Clientes e parceiros"] {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
+    overflow: hidden !important;
+  }
+
+  #clientes-carousel-container {
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  #clientes-track {
+    display: flex !important;
+    gap: 0 !important;
+  }
+
+  #clientes-list {
+    display: flex !important;
+    gap: 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   #clientes-list li {
-    min-width: 180px !important;
+    min-width: 160px !important;
+    flex-shrink: 0 !important;
+    margin-right: 1rem !important;
   }
 
   #clientes-list .flex {
-    width: 180px !important;
-    height: 120px !important;
-    padding: 1rem !important;
+    width: 160px !important;
+    height: 100px !important;
+    padding: 0.75rem !important;
   }
 
   #clientes-list img {
-    height: 80px !important;
+    height: 60px !important;
+    max-width: 100% !important;
+  }
+
+  /* Garantir que não haja sobreposição no carrossel */
+  #clientes-list li:last-child {
+    margin-right: 2rem !important;
   }
 
   section[aria-label="Clientes e parceiros"] .mb-20,
@@ -2393,6 +2514,26 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
     gap: 2rem !important;
   }
 
+  footer img[alt*="Logo"],
+  footer img[alt*="logo"] {
+    height: 32px !important;
+    width: auto !important;
+    max-width: 32px !important;
+  }
+
+  footer .flex.items-center.gap-3 {
+    gap: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  footer .text-base {
+    font-size: 0.875rem !important;
+  }
+
+  footer .text-xs {
+    font-size: 0.625rem !important;
+  }
+
   /* Galeria Mobile */
   #gallery-modal {
     padding: 1rem !important;
@@ -2418,11 +2559,28 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
 
   /* Header Mobile */
   header {
-    padding: 0.75rem 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  header img[alt*="Logo"],
+  header img[alt*="logo"] {
+    height: 32px !important;
+    width: auto !important;
+    max-width: 32px !important;
   }
 
   .header-logo-text {
-    font-size: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .header-logo-subtext {
+    font-size: 0.625rem !important;
+    line-height: 1.2 !important;
+  }
+
+  header .flex.items-center.gap-3 {
+    gap: 0.5rem !important;
   }
 
   /* Menu Mobile */
@@ -2674,5 +2832,94 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
       transition-duration: 0.3s !important;
     }
   }
+
+  /* Hero Slideshow Mobile - Corrigir imagens juntas */
+  .hero-slideshow,
+  #hero-slideshow-container {
+    display: flex !important;
+    width: 300% !important;
+    height: 100% !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+  }
+
+  .hero-slide {
+    width: 33.333% !important;
+    min-width: 33.333% !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+    height: 100% !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    object-fit: cover !important;
+  }
+
+  .hero-bg {
+    overflow: hidden !important;
+  }
+}
+
+/* ============================================
+   CORREÇÃO: Textos pretos desde o início
+   ============================================ */
+
+/* Seção Contato - Forçar textos pretos em cards brancos */
+#contato div[style*="background-color: #FFFFFF"],
+#contato div[style*="background-color:#FFFFFF"] {
+  color: #1C1C1C !important;
+}
+
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #6B7280"],
+#contato div[style*="background-color: #FFFFFF"] h3[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] a[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] .text-xs[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] .text-base[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] .text-base[style*="color: #4A4A4A"],
+#contato div[style*="background-color: #FFFFFF"] .text-sm[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] .text-sm[style*="color: #6B7280"],
+#contato div[style*="background-color: #FFFFFF"] .text-xl[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] .text-lg[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] .text-2xl[style*="color: #1C1C1C"] {
+  color: #1C1C1C !important;
+}
+
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"] {
+  color: #4A4A4A !important;
+}
+
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #6B7280"],
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #6B7280"] {
+  color: #6B7280 !important;
+}
+
+/* Seção Sobre - Forçar textos pretos em cards brancos */
+#sobre div[style*="background-color: #FFFFFF"],
+#sobre div[style*="background-color:#FFFFFF"],
+#sobre article[style*="background-color: #FFFFFF"],
+#sobre article[style*="background-color:#FFFFFF"] {
+  color: #1C1C1C !important;
+}
+
+#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
+#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
+#sobre article[style*="background-color: #FFFFFF"] h3[style*="color: #1C1C1C"],
+#sobre article[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
+#sobre article[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"],
+#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
+#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
+#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
+#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"] {
+  color: #1C1C1C !important;
+}
+
+#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
+#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
+#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"] {
+  color: #4A4A4A !important;
 }
 

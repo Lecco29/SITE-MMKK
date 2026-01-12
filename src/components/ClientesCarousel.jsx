@@ -20,8 +20,14 @@ function ClientesCarousel() {
     const list = listRef.current
     if (!track || !list) return
 
+    // Garantir gap entre itens
+    list.style.gap = '1rem'
+    list.style.display = 'flex'
+    list.style.alignItems = 'center'
+    
     // Duplicar a lista para rolagem contínua
     const clone = list.cloneNode(true)
+    clone.style.gap = '1rem'
     track.appendChild(clone)
 
     const speed = 30 // pixels por segundo (mais lento)
