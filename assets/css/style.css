@@ -1,0 +1,2678 @@
+/* Sistema de Tipografia Moderno e Minimalista */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #FFFFFF;
+  color: #1C1C1C;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings - Padronizados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1C1C1C;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+}
+
+/* Textos - Padronizados */
+p {
+  color: #4A4A4A;
+  font-size: 1rem; /* 16px */
+  line-height: 1.7;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+/* Botões e Links */
+button, a, .btn-primary, .btn-secondary {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 1rem;
+}
+
+/* Tamanhos de texto padronizados */
+.text-xs {
+  font-size: 0.75rem !important; /* 12px */
+  line-height: 1.5;
+}
+
+.text-sm {
+  font-size: 0.875rem !important; /* 14px */
+  line-height: 1.5;
+}
+
+.text-base {
+  font-size: 1rem !important; /* 16px */
+  line-height: 1.6;
+}
+
+.text-lg {
+  font-size: 1.125rem !important; /* 18px */
+  line-height: 1.6;
+}
+
+.text-xl {
+  font-size: 1.25rem !important; /* 20px */
+  line-height: 1.6;
+}
+
+.text-2xl {
+  font-size: 1.5rem !important; /* 24px */
+  line-height: 1.4;
+}
+
+.text-3xl {
+  font-size: 1.875rem !important; /* 30px */
+  line-height: 1.3;
+}
+
+.text-4xl {
+  font-size: 2.25rem !important; /* 36px */
+  line-height: 1.2;
+}
+
+.text-5xl {
+  font-size: 3rem !important; /* 48px */
+  line-height: 1.1;
+}
+
+.text-6xl {
+  font-size: 3.75rem !important; /* 60px */
+  line-height: 1.1;
+}
+
+.text-7xl {
+  font-size: 4.5rem !important; /* 72px */
+  line-height: 1.1;
+}
+
+/* Responsivo - Ajustes para mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* 32px mobile */
+  }
+  
+  h2 {
+    font-size: 1.75rem; /* 28px mobile */
+  }
+  
+  h3 {
+    font-size: 1.375rem; /* 22px mobile */
+  }
+  
+  .text-4xl {
+    font-size: 1.875rem !important; /* 30px mobile */
+  }
+  
+  .text-5xl {
+    font-size: 2.25rem !important; /* 36px mobile */
+  }
+  
+  .text-6xl {
+    font-size: 3rem !important; /* 48px mobile */
+  }
+  
+  .text-7xl {
+    font-size: 3.75rem !important; /* 60px mobile */
+  }
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, box-shadow;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-4px);
+}
+
+.card:active {
+  transform: translateY(-2px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  background: #F2F2F2;
+  color: #1C1C1C;
+  border: 1px solid #E5E5E5;
+}
+
+.badge-white {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, background, border-color;
+}
+
+.badge-white:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.stat-card {
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.scroll-reveal {
+  margin: 12px 0;
+}
+
+.scroll-reveal-text {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.word {
+  display: inline-block;
+  will-change: opacity, filter, transform;
+}
+
+/* LogoLoop (adaptado do snippet) */
+.logoloop {
+  position: relative;
+  --logoloop-gap: 32px;
+  --logoloop-logoHeight: 28px;
+  --logoloop-fadeColorAuto: transparent;
+  --logoloop-fadeColor: transparent;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.logoloop--vertical {
+  height: 100%;
+  display: inline-block;
+}
+
+.logoloop--scale-hover {
+  padding-top: calc(var(--logoloop-logoHeight) * 0.1);
+  padding-bottom: calc(var(--logoloop-logoHeight) * 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .logoloop {
+    --logoloop-fadeColorAuto: #ffffff;
+  }
+}
+
+.logoloop__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  user-select: none;
+  position: relative;
+  z-index: 0;
+}
+
+.logoloop--vertical .logoloop__track {
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+}
+
+.logoloop__list {
+  display: flex;
+  align-items: center;
+}
+
+.logoloop--vertical .logoloop__list {
+  flex-direction: column;
+}
+
+.logoloop__item {
+  flex: 0 0 auto;
+  margin-right: var(--logoloop-gap);
+  font-size: var(--logoloop-logoHeight);
+  line-height: 1;
+}
+
+.logoloop--vertical .logoloop__item {
+  margin-right: 0;
+  margin-bottom: var(--logoloop-gap);
+}
+
+.logoloop__item:last-child {
+  margin-right: var(--logoloop-gap);
+}
+
+.logoloop--vertical .logoloop__item:last-child {
+  margin-right: 0;
+  margin-bottom: var(--logoloop-gap);
+}
+
+.logoloop__node {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logoloop__item img {
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  display: block;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop--scale-hover .logoloop__item {
+  overflow: visible;
+}
+
+.logoloop--scale-hover .logoloop__item:hover img,
+.logoloop--scale-hover .logoloop__item:hover .logoloop__node {
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+
+.logoloop--scale-hover .logoloop__node {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.logoloop__link:hover {
+  opacity: 0.8;
+}
+
+.logoloop__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.logoloop--fade::before,
+.logoloop--fade::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(12px, 6%, 80px);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.logoloop--fade::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logoloop--fade::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logoloop--vertical.logoloop--fade::before,
+.logoloop--vertical.logoloop--fade::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: clamp(24px, 8%, 120px);
+}
+
+.logoloop--vertical.logoloop--fade::before {
+  top: 0;
+  bottom: auto;
+  background: linear-gradient(
+    to bottom,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logoloop--vertical.logoloop--fade::after {
+  bottom: 0;
+  top: auto;
+  background: linear-gradient(
+    to top,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoloop__track {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .logoloop__item img,
+  .logoloop__node {
+    transition: none !important;
+  }
+}
+
+/* Galeria Modal */
+#gallery-modal {
+  animation: fadeIn 0.3s ease-out;
+}
+
+#gallery-modal.hidden {
+  display: none;
+}
+
+#gallery-modal:not(.hidden) {
+  display: flex;
+}
+
+#gallery-image {
+  animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Melhorias nos cards de obras */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Melhorias gerais de espaçamento e tipografia */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* Transições suaves entre seções */
+section + section {
+  margin-top: 0;
+}
+
+/* Melhor contraste e legibilidade */
+body {
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.text-sm, .text-xs {
+  letter-spacing: 0.02em;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  top: 0;
+}
+
+/* Overlay fixo e permanente sobre as imagens - sempre visível */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.65)
+  );
+  pointer-events: none;
+  /* Garantir que o overlay sempre fique visível */
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Gradiente laranja sutil sobre o overlay escuro */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(242, 140, 40, 0.15) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+  /* Garantir que o overlay sempre fique visível */
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.hero-slideshow {
+  display: flex !important;
+  height: 100% !important;
+  min-height: 100vh !important;
+  will-change: transform;
+  position: relative;
+}
+
+#hero-slideshow-container {
+  display: flex !important;
+  height: 100% !important;
+  min-height: 100vh !important;
+}
+
+.hero-slide {
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+  height: 100% !important;
+  min-height: 100vh !important;
+  position: relative !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hero-bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Garantir que todos os textos da seção Hero sejam brancos */
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p,
+.hero-section span:not(.text-\[#F28C28\]),
+.hero-section a:not([style*="background"]),
+.hero-section .text-white {
+  color: #FFFFFF !important;
+}
+
+/* Overlay para a seção hero de Obras Realizadas - igual à página inicial */
+.obras-hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.65)
+  ) !important;
+  pointer-events: none;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Gradiente laranja sutil sobre o overlay escuro - Obras Realizadas */
+.obras-hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(242, 140, 40, 0.15) 0%,
+    transparent 50%
+  ) !important;
+  pointer-events: none;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Garantir que todos os textos da seção Hero de Obras sejam brancos */
+.obras-hero-section h1,
+.obras-hero-section h2,
+.obras-hero-section h3,
+.obras-hero-section p,
+.obras-hero-section span:not([style*="color: #F28C28"]),
+.obras-hero-section a:not([style*="background"]),
+.obras-hero-section .text-white {
+  color: #FFFFFF !important;
+}
+
+/* Overlay para a seção hero de Fale Conosco - igual à página Obras Realizadas */
+.contato-hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.65)
+  ) !important;
+  pointer-events: none;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Gradiente laranja sutil sobre o overlay escuro - Fale Conosco */
+.contato-hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(242, 140, 40, 0.15) 0%,
+    transparent 50%
+  ) !important;
+  pointer-events: none;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Garantir que todos os textos da seção Hero de Fale Conosco sejam brancos */
+.contato-hero-section h1,
+.contato-hero-section h2,
+.contato-hero-section h3,
+.contato-hero-section p,
+.contato-hero-section span:not([style*="color: #F28C28"]),
+.contato-hero-section a:not([style*="background"]),
+.contato-hero-section .text-white {
+  color: #FFFFFF !important;
+}
+
+/* Animação do ponto pulsante no badge */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+.hero-section .animate-pulse {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Seção Sobre - Texto branco (exceto textos específicos que devem ser pretos) */
+#sobre .sobre-text-white,
+#sobre p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #FFFFFF"]),
+#sobre h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]),
+#sobre h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]) {
+  color: #FFFFFF !important;
+}
+
+/* Garantir que textos específicos na seção Sobre fiquem pretos */
+#sobre p[style*="color: #1C1C1C"],
+#sobre p[style*="color: #4A4A4A"],
+#sobre h3[style*="color: #1C1C1C"],
+#sobre a[style*="color: #1C1C1C"],
+#sobre a[style*="color: #FF7A00"] {
+  color: #1C1C1C !important;
+}
+
+#sobre p[style*="opacity"] {
+  opacity: 1 !important;
+}
+
+/* Seção Contato - Texto branco (exceto textos específicos que devem ser pretos) */
+#contato .contato-text-white,
+#contato p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #9B9B9B"]):not([style*="color: #FFFFFF"]),
+#contato h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]),
+#contato h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]) {
+  color: #FFFFFF !important;
+}
+
+/* Garantir que textos específicos na seção Contato fiquem pretos */
+#contato p[style*="color: #1C1C1C"],
+#contato p[style*="color: #4A4A4A"],
+#contato p[style*="color: #6B7280"],
+#contato h3[style*="color: #1C1C1C"],
+#contato a[style*="color: #1C1C1C"],
+#contato span[style*="color: #1C1C1C"],
+#contato p.text-xs[style*="color: #1C1C1C"],
+#contato p.text-xs[style*="color: #F28C28"] {
+  color: #1C1C1C !important;
+}
+
+#contato p[style*="color: #4A4A4A"] {
+  color: #4A4A4A !important;
+}
+
+#contato p[style*="color: #6B7280"] {
+  color: #1C1C1C !important;
+}
+
+#contato p[style*="opacity"] {
+  opacity: 1 !important;
+}
+
+/* Badges brancos para hero */
+.badge-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.badge-white:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Cards glass para hero */
+.stat-card-glass {
+  transition: all 0.3s ease;
+}
+
+.stat-card-glass:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Botões melhorados */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, box-shadow;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(242, 140, 40, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, background-color, border-color;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Micro-interações para links - excluindo links de navegação do header */
+a:not(.btn-primary):not(.btn-secondary):not(.header-nav-link) {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+a:not(.btn-primary):not(.btn-secondary):not(.header-nav-link)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:not(.btn-primary):not(.btn-secondary):not(.header-nav-link):hover::after {
+  width: 100%;
+}
+
+/* Garantir alinhamento correto do underline na navegação */
+.header-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  font-weight: 400;
+}
+
+.header-nav-link span[class*="z-10"] {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/* Animação de underline para links de navegação */
+.header-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #F28C28;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+/* Underline aparece no hover */
+.header-nav-link:hover::after {
+  width: 80%;
+}
+
+/* Underline completo para link ativo */
+.header-nav-link.header-nav-active::after,
+.header-nav-link[aria-current="page"]::after {
+  width: 80%;
+}
+
+/* Micro-interações para imagens */
+img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.group:hover img {
+  transform: scale(1.05);
+}
+
+/* Micro-interações para ícones */
+svg {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover svg,
+button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Skip link styles */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  z-index: 9999;
+  background-color: #F28C28;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus visible para melhor acessibilidade */
+*:focus-visible {
+  outline: 2px solid #F28C28;
+  outline-offset: 2px;
+}
+
+/* Melhorar contraste de links */
+a:not(.btn-primary):not(.btn-secondary):not([class*="text-white"]) {
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+a:not(.btn-primary):not(.btn-secondary):not([class*="text-white"]):hover {
+  color: #F28C28;
+}
+
+/* Estados de loading e transição */
+[aria-busy="true"] {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Melhorar legibilidade de texto sobre imagens */
+.text-shadow-strong {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Micro-interações para inputs e elementos de formulário */
+input,
+textarea,
+select {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  transform: scale(1.02);
+  outline: none;
+}
+
+/* Ripple animation */
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Smooth transitions para todos os elementos interativos */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Micro-interações para header */
+header {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header transparente - padrão para outras páginas (fundo claro) */
+header.header-transparent {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
+}
+
+/* PÁGINA INICIAL - Header transparente (sem scrolled) = LOGO PRETA, TEXTO BRANCO */
+body.index-page header.header-transparent:not(.scrolled) .header-logo-text,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-logo-text {
+  color: #1C1C1C !important;
+}
+
+body.index-page header.header-transparent:not(.scrolled) .header-logo-subtext,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-logo-subtext {
+  color: #1C1C1C !important;
+}
+
+body.index-page header.header-transparent:not(.scrolled) .header-nav-link,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-nav-link {
+  color: #1C1C1C !important;
+}
+
+/* PÁGINA INICIAL - Header scrolled (branco) = TEXTO PRETO */
+body.index-page header.header-transparent.scrolled .header-logo-text,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-logo-text {
+  color: #1C1C1C !important;
+}
+
+body.index-page header.header-transparent.scrolled .header-logo-subtext,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-logo-subtext {
+  color: #4A4A4A !important;
+}
+
+body.index-page header.header-transparent.scrolled .header-nav-link,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-nav-link {
+  color: #1C1C1C !important;
+}
+
+/* Logo sempre preta em todas as páginas, mesmo quando transparente */
+header.header-transparent .header-logo-text,
+header.header-transparent:not(.scrolled) .header-logo-text,
+header.header-transparent.scrolled .header-logo-text {
+  color: #1C1C1C !important;
+}
+
+header.header-transparent .header-logo-subtext,
+header.header-transparent:not(.scrolled) .header-logo-subtext,
+header.header-transparent.scrolled .header-logo-subtext {
+  color: #1C1C1C !important;
+}
+
+header.header-transparent .header-nav-link {
+  color: #1C1C1C !important;
+}
+
+/* Removido - todas as páginas agora usam texto escuro */
+
+/* Hover - Página inicial transparente = preto, scrolled = laranja */
+body.index-page header.header-transparent:not(.scrolled) .header-nav-link:hover,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-nav-link:hover {
+  color: #1C1C1C !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+body.index-page header.header-transparent.scrolled .header-nav-link:hover,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-nav-link:hover {
+  color: #F28C28 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+header.header-transparent .header-nav-link:hover {
+  color: #F28C28 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Link ativo - Página inicial transparente = laranja, scrolled = laranja */
+body.index-page header.header-transparent:not(.scrolled) .header-nav-active,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-nav-active {
+  color: #F28C28 !important;
+  background-color: rgba(242, 140, 40, 0.1) !important;
+}
+
+body.index-page header.header-transparent.scrolled .header-nav-active,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-nav-active {
+  color: #F28C28 !important;
+  background-color: rgba(242, 140, 40, 0.08) !important;
+}
+
+header.header-transparent .header-nav-active {
+  color: #F28C28 !important;
+  background-color: rgba(242, 140, 40, 0.15) !important;
+}
+
+/* Botão menu - Página inicial transparente = preto, scrolled = preto */
+body.index-page header.header-transparent:not(.scrolled) .header-menu-btn,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-menu-btn {
+  color: #1C1C1C !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.index-page header.header-transparent.scrolled .header-menu-btn,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-menu-btn {
+  color: #1C1C1C !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: transparent !important;
+}
+
+header.header-transparent .header-menu-btn {
+  color: #1C1C1C !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+header.header-transparent .header-menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Removido - todas as páginas agora usam texto escuro */
+
+header.header-transparent.scrolled {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(229, 229, 229, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Removido - regras conflitantes movidas para cima */
+
+/* Garantir que classes do Tailwind não sobrescrevam quando transparente */
+header.header-transparent .header-nav-link.hover\:bg-gray-50:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+header.header-transparent .header-nav-link.hover\:text-brand-600:hover {
+  color: #F28C28 !important;
+}
+
+/* Link ativo - underline já está definido acima */
+
+/* Quando scrolled - outras páginas (não inicial) */
+body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-nav-link,
+body.contato-page header.header-transparent.scrolled .header-nav-link,
+body.obras-page header.header-transparent.scrolled .header-nav-link,
+body.servicos-page header.header-transparent.scrolled .header-nav-link {
+  color: #1C1C1C !important;
+}
+
+body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-nav-link:hover,
+body.contato-page header.header-transparent.scrolled .header-nav-link:hover,
+body.obras-page header.header-transparent.scrolled .header-nav-link:hover,
+body.servicos-page header.header-transparent.scrolled .header-nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-nav-active,
+body.contato-page header.header-transparent.scrolled .header-nav-active,
+body.obras-page header.header-transparent.scrolled .header-nav-active,
+body.servicos-page header.header-transparent.scrolled .header-nav-active {
+  color: #F28C28 !important;
+  background-color: rgba(242, 140, 40, 0.08) !important;
+}
+
+body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-logo-text,
+body.contato-page header.header-transparent.scrolled .header-logo-text,
+body.obras-page header.header-transparent.scrolled .header-logo-text,
+body.servicos-page header.header-transparent.scrolled .header-logo-text {
+  color: #1C1C1C !important;
+}
+
+body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-logo-subtext,
+body.contato-page header.header-transparent.scrolled .header-logo-subtext,
+body.obras-page header.header-transparent.scrolled .header-logo-subtext,
+body.servicos-page header.header-transparent.scrolled .header-logo-subtext {
+  color: #4A4A4A !important;
+}
+
+body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-menu-btn,
+body.contato-page header.header-transparent.scrolled .header-menu-btn,
+body.obras-page header.header-transparent.scrolled .header-menu-btn,
+body.servicos-page header.header-transparent.scrolled .header-menu-btn {
+  color: #1C1C1C !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: transparent !important;
+}
+
+body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-menu-btn:hover,
+body.contato-page header.header-transparent.scrolled .header-menu-btn:hover,
+body.obras-page header.header-transparent.scrolled .header-menu-btn:hover,
+body.servicos-page header.header-transparent.scrolled .header-menu-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Menu mobile no header transparente */
+/* Menu mobile - Página inicial transparente = fundo branco, texto preto */
+body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu a,
+body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu .mobile-menu-link,
+body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu button,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu a,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu .mobile-menu-link,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu button {
+  color: #1C1C1C !important;
+}
+
+body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu a:hover,
+body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu .mobile-menu-link:hover,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu a:hover,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu .mobile-menu-link:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: #1C1C1C !important;
+}
+
+/* Menu mobile - Página inicial scrolled = fundo branco, texto preto */
+body.index-page header.header-transparent.scrolled .header-mobile-menu,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(229, 229, 229, 0.6) !important;
+}
+
+body.index-page header.header-transparent.scrolled .header-mobile-menu a,
+body.index-page header.header-transparent.scrolled .header-mobile-menu .mobile-menu-link,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu a,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu .mobile-menu-link {
+  color: #1C1C1C !important;
+}
+
+body.index-page header.header-transparent.scrolled .header-mobile-menu a:hover,
+body.index-page header.header-transparent.scrolled .header-mobile-menu .mobile-menu-link:hover,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu a:hover,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu .mobile-menu-link:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: #1C1C1C !important;
+}
+
+/* Menu mobile - Outras páginas (regras gerais - menor especificidade) */
+body.contato-page header.header-transparent .header-mobile-menu,
+body.obras-page header.header-transparent .header-mobile-menu,
+body.servicos-page header.header-transparent .header-mobile-menu {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.contato-page header.header-transparent.scrolled .header-mobile-menu,
+body.obras-page header.header-transparent.scrolled .header-mobile-menu,
+body.servicos-page header.header-transparent.scrolled .header-mobile-menu {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(229, 229, 229, 0.6) !important;
+}
+
+/* Garantir que regras gerais não sobrescrevam as específicas da página inicial */
+body.index-page .header-mobile-menu .mobile-menu-link,
+body:not(.contato-page):not(.obras-page):not(.servicos-page) .header-mobile-menu .mobile-menu-link {
+  /* Cor será definida pelas regras acima baseadas no estado do header */
+}
+
+/* Micro-interações para imagens de cards */
+.group img {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Micro-interações para números/estatísticas */
+[class*="text-5xl"],
+[class*="text-6xl"],
+[class*="text-7xl"] {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scroll suave com easing personalizado */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Micro-interações para elementos com border */
+[class*="border"] {
+  transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Loading states suaves */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Remover animação do menu mobile na página de contato */
+.header-mobile-menu.no-animation,
+body.contato-page .header-mobile-menu {
+  animation: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Remover todas as animações do header na página de contato */
+body.contato-page #main-header,
+body.contato-page header {
+  animation: none !important;
+  transition: none !important;
+}
+
+body.contato-page #main-header *,
+body.contato-page header * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Remover animações de scroll na página de contato */
+body.contato-page .card,
+body.contato-page article,
+body.contato-page section,
+body.contato-page [class*="rounded-lg"],
+body.contato-page .badge,
+body.contato-page .badge-white,
+body.contato-page section h2,
+body.contato-page section h3,
+body.contato-page section p {
+  animation: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Garantir que o botão WhatsApp flutuante esteja visível */
+a[href*="wa.me"].fixed,
+a[href*="wa.me"][class*="fixed"] {
+  z-index: 9999 !important;
+  position: fixed !important;
+}
+
+/* Melhorar contraste e acessibilidade */
+:focus-visible {
+  outline: 2px solid #F28C28;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Estados de hover mais consistentes */
+button:not(:disabled):hover,
+a:not([aria-disabled="true"]):hover {
+  cursor: pointer;
+}
+
+button:disabled,
+a[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Melhorar legibilidade de texto */
+p, span, div {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Transições suaves para imagens */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Melhorar acessibilidade de formulários */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: #ef4444;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: #10b981;
+}
+
+/* Estados de carregamento */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Melhorar visibilidade de elementos interativos */
+[role="button"],
+button,
+a[href] {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Melhorar contraste de texto sobre imagens */
+.text-over-image {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Melhorar acessibilidade de navegação - excluindo header-nav-link para evitar duplicação */
+nav a[aria-current="page"]:not(.header-nav-link) {
+  position: relative;
+  font-weight: 600;
+}
+
+nav a[aria-current="page"]:not(.header-nav-link)::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #F28C28;
+}
+
+/* Para header-nav-link, apenas ajustar font-weight */
+.header-nav-link[aria-current="page"] {
+  font-weight: 400;
+}
+
+/* Remover negrito dos links "Obras Realizadas" e "Fale Conosco" */
+a[href*="obras.html"].header-nav-link,
+a[href*="contato.html"].header-nav-link,
+a[href*="obras.html"].header-nav-link span,
+a[href*="contato.html"].header-nav-link span,
+a[href*="obras.html"].header-nav-link[aria-current="page"],
+a[href*="contato.html"].header-nav-link[aria-current="page"],
+a[href*="obras.html"].header-nav-link.header-nav-active,
+a[href*="contato.html"].header-nav-link.header-nav-active {
+  font-weight: 400 !important;
+}
+
+/* Melhorar estados de hover em navegação */
+nav a:not([aria-current="page"]):hover {
+  color: #F28C28;
+  transform: translateY(-1px);
+}
+
+/* Footer - Cinza Escuro */
+footer {
+  background-color: #2F2F2F !important;
+}
+
+footer.border-t {
+  border-color: #404040 !important;
+}
+
+/* Desabilitar todas as animações nos links do rodapé */
+footer a,
+footer nav a {
+  transition: color 0.2s ease !important;
+  animation: none !important;
+  transform: none !important;
+  color: #FFFFFF !important;
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2 !important;
+  display: block !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+footer a:hover,
+footer nav a:hover {
+  transition: color 0.2s ease !important;
+  animation: none !important;
+  transform: none !important;
+  color: #F28C28 !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+footer a::after,
+footer nav a::after,
+footer a:hover::after,
+footer nav a:hover::after {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  content: none !important;
+}
+
+/* Alinhamento e espaçamento do rodapé */
+footer p {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 1px !important;
+  line-height: 1.1 !important;
+  color: #FFFFFF !important;
+}
+
+footer p.text-sm.font-semibold {
+  color: #FFFFFF !important;
+}
+
+footer nav,
+footer div.flex.flex-col {
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer nav a:first-child {
+  margin-top: 1px !important;
+}
+
+/* Melhorar transições de imagens */
+img {
+  transition: opacity 0.3s ease, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img[loading="lazy"] {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Melhorar acessibilidade de cards clicáveis */
+article[role="button"],
+a[role="button"] {
+  cursor: pointer;
+}
+
+/* Melhorar feedback visual de interações */
+* {
+  -webkit-tap-highlight-color: rgba(242, 140, 40, 0.2);
+}
+
+/* Loading states e skeletons */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.image-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-loading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s ease-in-out infinite;
+  z-index: 1;
+}
+
+.image-loading img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-loading img.loaded {
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+}
+
+/* Melhorar acessibilidade - contraste e navegação por teclado */
+:focus-visible {
+  outline: 3px solid #F28C28;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #F28C28;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Melhorar contraste de texto */
+.text-low-contrast {
+  color: #4A4A4A;
+}
+
+/* Melhorar legibilidade em diferentes dispositivos */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+}
+
+/* Melhorar contraste em modo de alto contraste */
+@media (prefers-contrast: high) {
+  * {
+    border-color: currentColor !important;
+  }
+  
+  .card {
+    border-width: 2px;
+  }
+}
+
+/* Reduzir animações para usuários que preferem */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Animações de entrada para seções */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Melhorias nos botões em todas as páginas */
+a[href*="contato"],
+a[href*="obras"],
+button[onclick*="contato"],
+button[onclick*="obras"] {
+  font-weight: 700;
+}
+
+/* Garantir que botões tenham cores corretas */
+.bg-brand-600,
+.bg-orange-600 {
+  color: #ffffff !important;
+}
+
+.border-slate-200,
+.border-slate-300 {
+  color: #1e293b !important;
+}
+
+/* Paleta de Cores MMKK */
+:root {
+  --color-primary: #F28C28;
+  --color-primary-dark: #D9771E;
+  --color-grafite: #1C1C1C;
+  --color-gray-dark: #4A4A4A;
+  --color-gray-medium: #9B9B9B;
+  --color-gray-light: #F2F2F2;
+  --color-concrete: #E5E5E5;
+  --color-white: #FFFFFF;
+  --color-steel: #2F3E46;
+}
+
+/* Sobrescrever cores do Tailwind */
+.bg-orange-600,
+.bg-orange-500,
+.bg-brand-500,
+.bg-brand-primary,
+[class*="bg-orange-600"],
+[class*="bg-orange-500"] {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-orange-700,
+.bg-orange-800,
+.bg-brand-600,
+.bg-brand-primary-dark,
+[class*="bg-orange-700"],
+[class*="bg-orange-800"] {
+  background-color: var(--color-primary-dark) !important;
+}
+
+.hover\:bg-orange-700:hover,
+.hover\:bg-orange-800:hover {
+  background-color: var(--color-primary-dark) !important;
+}
+
+.text-orange-600,
+.text-orange-500,
+.text-brand-500,
+.text-brand-primary,
+[class*="text-orange-600"],
+[class*="text-orange-500"] {
+  color: var(--color-primary) !important;
+}
+
+.border-orange-600,
+.border-orange-500,
+.border-brand-500,
+[class*="border-orange-600"],
+[class*="border-orange-500"] {
+  border-color: var(--color-primary) !important;
+}
+
+.bg-orange-50,
+.bg-orange-100 {
+  background-color: var(--color-gray-light) !important;
+}
+
+.border-orange-100,
+.border-orange-200 {
+  border-color: var(--color-concrete) !important;
+}
+
+.text-slate-900,
+.text-gray-900,
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-grafite) !important;
+}
+
+.text-slate-600,
+.text-gray-600,
+p {
+  color: var(--color-gray-dark) !important;
+}
+
+.text-slate-500,
+.text-gray-500 {
+  color: var(--color-gray-medium) !important;
+}
+
+.bg-slate-50,
+.bg-gray-50 {
+  background-color: var(--color-gray-light) !important;
+}
+
+.bg-white {
+  background-color: var(--color-white) !important;
+}
+
+/* Gradientes com nova paleta */
+.bg-gradient-to-br.from-orange-600.to-orange-700,
+[class*="from-orange-600"][class*="to-orange-700"] {
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-dark)) !important;
+}
+
+/* Sombras com cor laranja */
+.shadow-orange-900\/25,
+.shadow-orange-900\/30 {
+  box-shadow: 0 10px 15px -3px rgba(28, 28, 28, 0.1), 0 4px 6px -2px rgba(28, 28, 28, 0.05) !important;
+}
+
+/* Melhorias de transição entre seções */
+section {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Efeitos de hover melhorados */
+.card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Animações suaves para números */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Melhorias de espaçamento */
+section + section {
+  scroll-margin-top: 4rem;
+}
+
+/* Hero Slideshow - Efeito Slide */
+.hero-slideshow {
+  display: flex !important;
+  position: relative;
+  height: 100% !important;
+  will-change: transform;
+}
+
+.hero-slide {
+  position: relative !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  opacity: 1 !important;
+  z-index: 0 !important;
+}
+
+.hero-slide.active {
+  opacity: 1 !important;
+  z-index: 0 !important;
+}
+
+/* Fix carousel navigation buttons position */
+.obras-carousel-prev,
+.obras-carousel-next {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  will-change: transform;
+}
+
+.obras-carousel-prev:hover,
+.obras-carousel-next:hover {
+  transform: translateY(-50%) scale(1.1) !important;
+}
+
+/* Melhorias de Acessibilidade */
+*:focus-visible {
+  outline: 2px solid #F28C28 !important;
+  outline-offset: 2px !important;
+  border-radius: 4px;
+}
+
+/* Melhor contraste para links */
+a:not(.btn-primary):not(.btn-secondary) {
+  color: #1C1C1C;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:not(.btn-primary):not(.btn-secondary):hover {
+  color: #F28C28;
+  text-decoration-thickness: 2px;
+}
+
+/* Skip link para acessibilidade */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #F28C28;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Melhorar contraste de texto */
+p, span, div {
+  color: #1C1C1C;
+}
+
+/* Performance - Otimizar animações */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Harmonização de transições entre seções */
+section[style*="background-color: #FFFFFF"],
+section[style*="background-color:#FFFFFF"] {
+  scroll-margin-top: 80px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Espaçamento consistente entre seções brancas consecutivas */
+section[style*="background-color: #FFFFFF"] + section[style*="background-color: #FFFFFF"],
+section[style*="background-color:#FFFFFF"] + section[style*="background-color:#FFFFFF"] {
+  padding-top: 0;
+}
+
+/* Garantir que as seções tenham transições suaves ao aparecer */
+@media (prefers-reduced-motion: no-preference) {
+  section[style*="background-color: #FFFFFF"],
+  section[style*="background-color:#FFFFFF"] {
+    will-change: transform, opacity;
+  }
+}
+
+/* Garantir que todos os textos da seção de estatísticas fiquem brancos */
+section[style*="background: linear-gradient(135deg, #FF7A00"],
+section[style*="background:linear-gradient(135deg, #FF7A00"] {
+  color: #FFFFFF !important;
+}
+
+section[style*="background: linear-gradient(135deg, #FF7A00"] h2,
+section[style*="background:linear-gradient(135deg, #FF7A00"] h2,
+section[style*="background: linear-gradient(135deg, #FF7A00"] p,
+section[style*="background:linear-gradient(135deg, #FF7A00"] p,
+section[style*="background: linear-gradient(135deg, #FF7A00"] span,
+section[style*="background:linear-gradient(135deg, #FF7A00"] span {
+  color: #FFFFFF !important;
+}
+
+/* Carrossel de Clientes e Parceiros - Estilo Clean Corporativo */
+#clientes-carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#clientes-track {
+  display: flex;
+  will-change: transform;
+}
+
+#clientes-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#clientes-list li {
+  flex-shrink: 0;
+}
+
+#clientes-list img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+#clientes-list img:hover {
+  filter: grayscale(0%) opacity(1) !important;
+  transform: scale(1.05) !important;
+}
+
+#clientes-list .flex {
+  transition: border-color 0.3s ease;
+}
+
+#clientes-list .flex:hover {
+  border-color: #F28C28 !important;
+}
+
+/* Galeria de Obras - Botões fixos */
+#prev-btn,
+#next-btn {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  will-change: transform;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+  transform: translateY(-50%) scale(1.1) !important;
+}
+
+#prev-btn {
+  left: 24px !important;
+}
+
+#next-btn {
+  right: 24px !important;
+}
+
+/* Garantir que os botões não mudem de posição */
+#gallery-modal #prev-btn,
+#gallery-modal #next-btn {
+  position: fixed !important;
+  top: 50vh !important;
+  transform: translateY(-50%) !important;
+}
+
+/* ============================================
+   OTIMIZAÇÕES MOBILE - RESPONSIVIDADE COMPLETA
+   ============================================ */
+
+/* Ajustes gerais para mobile */
+@media (max-width: 768px) {
+  /* Melhorar legibilidade */
+  body {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Espaçamentos reduzidos */
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Headings responsivos */
+  h1 {
+    font-size: clamp(1.75rem, 8vw, 2.5rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    line-height: 1.3 !important;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 5vw, 1.5rem) !important;
+  }
+
+  /* Padding de containers */
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-\[1400px\] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Sobrescrever padding inline */
+  [class*="px-6"],
+  [class*="px-8"],
+  [class*="px-16"],
+  [class*="px-24"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  [class*="pt-24"],
+  [class*="pt-28"],
+  [class*="pt-32"],
+  [class*="pt-40"] {
+    padding-top: 3rem !important;
+  }
+
+  [class*="pb-40"],
+  [class*="pb-56"] {
+    padding-bottom: 2rem !important;
+  }
+
+  /* Botões maiores para toque */
+  button,
+  a[role="button"],
+  .btn-primary,
+  .btn-secondary {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    min-height: 100vh !important;
+    padding-top: 4rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .hero-section .max-w-7xl,
+  .hero-section .max-w-6xl,
+  .hero-section .max-w-\[1400px\] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+    padding: 0 !important;
+  }
+
+  .hero-section p {
+    font-size: clamp(0.9375rem, 3.5vw, 1.125rem) !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .hero-section .text-5xl,
+  .hero-section .text-6xl,
+  .hero-section .text-7xl {
+    font-size: clamp(1.5rem, 7vw, 2rem) !important;
+  }
+
+  .hero-section .text-xl,
+  .hero-section .text-2xl {
+    font-size: clamp(0.9375rem, 3.5vw, 1.125rem) !important;
+  }
+
+  .hero-section button,
+  .hero-section a[class*="inline-flex"] {
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.9375rem !important;
+    min-height: 44px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-section .flex.flex-wrap.gap-4 {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero-section .flex.flex-wrap.gap-2\.5 {
+    gap: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .hero-section .inline-flex.items-center.rounded-lg {
+    font-size: 0.75rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  /* Cards mobile */
+  .card {
+    padding: 1.25rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Grid responsivo */
+  .grid {
+    gap: 1.5rem !important;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  /* Carrossel de Clientes Mobile */
+  section[aria-label="Clientes e parceiros"] {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  #clientes-list li {
+    min-width: 180px !important;
+  }
+
+  #clientes-list .flex {
+    width: 180px !important;
+    height: 120px !important;
+    padding: 1rem !important;
+  }
+
+  #clientes-list img {
+    height: 80px !important;
+  }
+
+  section[aria-label="Clientes e parceiros"] .mb-20,
+  section[aria-label="Clientes e parceiros"] .mb-16 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  section[aria-label="Clientes e parceiros"] h2 {
+    font-size: clamp(1.375rem, 5vw, 1.75rem) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  section[aria-label="Clientes e parceiros"] p {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Carrossel de Obras Mobile */
+  section[aria-label="Carrossel de obras realizadas"],
+  section[aria-label*="obras realizadas"] {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .obras-carousel {
+    padding: 1rem 0 !important;
+  }
+
+  section[aria-label="Carrossel de obras realizadas"] h2,
+  section[aria-label*="obras realizadas"] h2 {
+    font-size: clamp(1.25rem, 5vw, 1.5rem) !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  section[aria-label="Carrossel de obras realizadas"] p,
+  section[aria-label*="obras realizadas"] p {
+    font-size: 0.875rem !important;
+  }
+
+  /* Estatísticas Mobile */
+  section[aria-label="Estatísticas e resultados"],
+  section[aria-label*="Estatísticas"] {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .grid.grid-cols-2.gap-8.md\:grid-cols-4 {
+    gap: 1.5rem !important;
+  }
+
+  section[aria-label="Estatísticas e resultados"] h2,
+  section[aria-label*="Estatísticas"] h2 {
+    font-size: clamp(1.375rem, 5.5vw, 1.75rem) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  section[aria-label="Estatísticas e resultados"] .text-4xl,
+  section[aria-label="Estatísticas e resultados"] .text-5xl,
+  section[aria-label="Estatísticas e resultados"] .text-6xl {
+    font-size: clamp(1.75rem, 6vw, 2.25rem) !important;
+  }
+
+  section[aria-label="Estatísticas e resultados"] .text-sm {
+    font-size: 0.75rem !important;
+  }
+
+  /* Footer Mobile */
+  footer {
+    padding: 2rem 1rem !important;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Galeria Mobile */
+  #gallery-modal {
+    padding: 1rem !important;
+  }
+
+  #gallery-image {
+    max-height: 70vh !important;
+    max-width: 100% !important;
+  }
+
+  #prev-btn,
+  #next-btn {
+    padding: 0.75rem !important;
+    left: 0.5rem !important;
+    right: 0.5rem !important;
+  }
+
+  #close-gallery {
+    top: 1rem !important;
+    right: 1rem !important;
+    padding: 0.75rem !important;
+  }
+
+  /* Header Mobile */
+  header {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .header-logo-text {
+    font-size: 1.25rem !important;
+  }
+
+  /* Menu Mobile */
+  .header-mobile-menu {
+    max-height: calc(100vh - 80px) !important;
+    overflow-y: auto !important;
+  }
+
+  /* WhatsApp Float Button Mobile */
+  .fixed.bottom-6.right-6 {
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  /* Textos responsivos */
+  .text-5xl {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+  }
+
+  .text-6xl {
+    font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
+  }
+
+  .text-7xl {
+    font-size: clamp(2rem, 8vw, 2.5rem) !important;
+  }
+
+  .text-3xl {
+    font-size: clamp(1.25rem, 5vw, 1.5rem) !important;
+  }
+
+  .text-4xl {
+    font-size: clamp(1.375rem, 5.5vw, 1.75rem) !important;
+  }
+
+  .text-2xl {
+    font-size: clamp(1.125rem, 4vw, 1.25rem) !important;
+  }
+
+  .text-xl {
+    font-size: clamp(1rem, 3.5vw, 1.125rem) !important;
+  }
+
+  .text-lg {
+    font-size: clamp(0.9375rem, 3vw, 1rem) !important;
+  }
+
+  .text-base {
+    font-size: 0.9375rem !important;
+  }
+
+  .text-sm {
+    font-size: 0.875rem !important;
+  }
+
+  .text-xs {
+    font-size: 0.75rem !important;
+  }
+
+  /* Espaçamentos reduzidos */
+  .mb-16,
+  .mb-20 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mb-12 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mb-8 {
+    margin-bottom: 1rem !important;
+  }
+
+  .mb-6 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .py-24,
+  .py-28,
+  .py-32,
+  .py-40 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Seções específicas */
+  section[style*="background-color: #FFFFFF"],
+  section[style*="background: linear-gradient"] {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Imagens responsivas */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Formulários Mobile */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important; /* Evita zoom no iOS */
+    min-height: 44px !important;
+    padding: 0.75rem !important;
+  }
+
+  /* Melhorar área de toque */
+  a,
+  button,
+  [role="button"] {
+    -webkit-tap-highlight-color: rgba(242, 140, 40, 0.3);
+    touch-action: manipulation;
+  }
+
+  /* Seção Sobre Mobile */
+  section#sobre,
+  section[aria-label*="Sobre"],
+  section[aria-label*="empresa"] {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  section#sobre h2,
+  section[aria-label*="Sobre"] h2 {
+    font-size: clamp(1.25rem, 5vw, 1.5rem) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  section#sobre p,
+  section[aria-label*="Sobre"] p {
+    font-size: 0.9375rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Seção Serviços Mobile */
+  section[aria-label*="Serviços"],
+  section[aria-label*="serviços"] {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  section[aria-label*="Serviços"] h2 {
+    font-size: clamp(1.375rem, 5.5vw, 1.75rem) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Seção Contato Mobile */
+  section[aria-label*="Contato"],
+  section[aria-label*="contato"],
+  section#contato {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  section[aria-label*="Contato"] h2,
+  section#contato h2 {
+    font-size: clamp(1.25rem, 5vw, 1.5rem) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Cards de serviços e contato mobile */
+  .grid.gap-10,
+  .grid.gap-8 {
+    gap: 1.5rem !important;
+  }
+
+  /* Garantir que todos os textos sejam legíveis */
+  p, span, div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Evitar overflow horizontal */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px !important;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.375rem !important;
+  }
+
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-\[1400px\] {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  button,
+  a[role="button"] {
+    padding: 0.625rem 1.25rem !important;
+    font-size: 0.9375rem !important;
+  }
+}
+
+/* Orientação landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto !important;
+    padding-top: 4rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  #gallery-image {
+    max-height: 80vh !important;
+  }
+}
+
+/* Melhorar performance mobile */
+@media (max-width: 768px) {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Reduzir animações em mobile */
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      animation-duration: 0.3s !important;
+      transition-duration: 0.3s !important;
+    }
+  }
+}
+

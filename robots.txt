@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mmkk.com.br/sitemap.xml
+
+# Bloquear arquivos desnecessários
+Disallow: /assets/js/
+Disallow: /node_modules/
+Disallow: /*.json$
+
+# Permitir imagens e CSS
+Allow: /assets/css/
+Allow: /assets/images/
+Allow: /fotos%20em%20geral/
