@@ -31,7 +31,7 @@ const Header = memo(() => {
           <img 
             src="./fotos%20em%20geral/Logo.jpeg" 
             alt="Logo MMKK Engenharia e Construções" 
-            className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" 
+            className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105 header-logo-img" 
             loading="eager"
             width="48"
             height="48"
