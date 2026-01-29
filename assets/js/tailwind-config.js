@@ -4,32 +4,29 @@ tailwind.config = {
       fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'] },
       colors: {
         brand: {
-          // Laranja Estrutural
-          primary: '#F28C28',
-          'primary-dark': '#D9771E',
-          // Cores Neutras
-          'grafite': '#1C1C1C',
-          'gray-dark': '#4A4A4A',
-          'gray-medium': '#9B9B9B',
-          'gray-light': '#F2F2F2',
-          'concrete': '#E5E5E5',
-          // Azul aço (opcional)
-          'steel': '#2F3E46',
-          // Mantendo compatibilidade
-          50: '#F2F2F2',
-          100: '#E5E5E5',
-          200: '#9B9B9B',
-          300: '#4A4A4A',
-          400: '#1C1C1C',
-          500: '#F28C28',
-          600: '#D9771E',
-          700: '#1C1C1C',
-          800: '#4A4A4A',
-          900: '#1C1C1C'
+          // Laranja MMKK - Paleta Unificada
+          50: '#FFFAF5',
+          100: '#FEF7F0',
+          200: '#FDF3EA',
+          300: '#F5A855',
+          400: '#E07B24',
+          500: '#E07B24',
+          600: '#C96A1A',
+          700: '#A85815',
+          800: '#874610',
+          900: '#66350C',
+          // Aliases
+          primary: '#E07B24',
+          'primary-dark': '#C96A1A',
+          'primary-light': '#F5A855',
+          // Neutros
+          'text-primary': '#1A1A1A',
+          'text-secondary': '#525252',
+          'text-muted': '#737373',
+          'border': '#E5E5E5',
+          'bg-dark': '#1F1F1F'
         }
       }
     }
   }
 };
-
-

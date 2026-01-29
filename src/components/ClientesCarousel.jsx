@@ -75,7 +75,7 @@ function ClientesCarousel() {
     <section className="relative py-32 lg:py-40 overflow-hidden" style={{backgroundColor: '#FFFFFF'}} aria-label="Clientes e parceiros">
       <div className="relative z-10 mx-auto max-w-[1400px] px-4 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-xs font-semibold uppercase mb-4" style={{color: '#F28C28', letterSpacing: '0.15em'}}>
+          <p className="text-xs font-semibold uppercase mb-4" style={{color: '#E07B24', letterSpacing: '0.15em'}}>
             Clientes e parceiros
           </p>
           <h2 className="text-3xl font-semibold mb-6 leading-[1.2] sm:text-4xl lg:text-5xl" style={{color: '#1C1C1C', letterSpacing: '-0.02em', fontWeight: 600}}>
@@ -94,7 +94,7 @@ function ClientesCarousel() {
               {logos.map((logo, index) => (
                 <li key={index} className="flex-shrink-0">
                   <div 
-                    className="flex items-center justify-center bg-white rounded-xl border transition-all duration-300 hover:border-[#F28C28]"
+                    className="flex items-center justify-center bg-white rounded-xl border transition-all duration-300 hover:border-[#E07B24]"
                     style={{
                       width: '260px',
                       height: '180px',
@@ -129,7 +129,7 @@ function ClientesCarousel() {
         </div>
 
         <p className="text-center mt-12 text-sm leading-relaxed" style={{color: '#6B7280', letterSpacing: '0'}}>
-          Atuação comprovada em projetos hospitalares, corporativos e industriais.
+          Atuação comprovada em projetos hospitalares e industriais.
         </p>
       </div>
     </section>

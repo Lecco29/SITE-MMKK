@@ -28,8 +28,8 @@ export function Button({
   }
   
   const variantStyles = {
-    primary: { backgroundColor: '#F28C28', boxShadow: '0 4px 14px 0 rgba(242, 140, 40, 0.25)' },
-    secondary: { borderColor: '#F28C28', backgroundColor: '#FFFFFF', color: '#F28C28' },
+    primary: { backgroundColor: '#E07B24', boxShadow: '0 4px 14px 0 rgba(224, 123, 36, 0.25)' },
+    secondary: { borderColor: '#E07B24', backgroundColor: '#FFFFFF', color: '#E07B24' },
     outline: { borderColor: 'rgba(255,255,255,0.4)', backgroundColor: 'rgba(255,255,255,0.08)', color: '#FFFFFF' }
   }
   

@@ -36,7 +36,7 @@ export function SectionHeader({
   return (
     <div className={`text-center mb-16 ${className}`}>
       {badge && (
-        <p className="text-xs font-semibold uppercase tracking-[0.05em] mb-4" style={{color: '#F28C28', letterSpacing: '0.05em'}}>
+        <p className="text-xs font-semibold uppercase tracking-[0.05em] mb-4" style={{color: '#E07B24', letterSpacing: '0.05em'}}>
           {badge}
         </p>
       )}

@@ -40,11 +40,11 @@
       <div class="relative py-24 lg:py-28 overflow-hidden" style="background-color: #FFFFFF;">
         <div class="relative z-10 mx-auto max-w-[1400px] px-4 lg:px-8">
           <div class="text-center mb-16">
-            <p class="text-xs font-semibold uppercase tracking-[0.05em] mb-6" style="color: #F28C28; letter-spacing: 0.05em;">Obras Realizadas</p>
-            <h2 class="text-3xl font-semibold mb-4 leading-[1.2] sm:text-4xl lg:text-5xl" style="color: #1C1C1C; letter-spacing: -0.02em;">
+            <p class="text-sm font-bold uppercase tracking-[0.15em] mb-6" style="color: #E07B24; letter-spacing: 0.15em;">Obras Realizadas</p>
+            <h2 class="text-4xl font-bold uppercase mb-4 leading-[1.1] sm:text-5xl lg:text-6xl" style="color: #1A1A1A; letter-spacing: -0.02em;">
               Portfólio de obras
             </h2>
-            <p class="text-base max-w-2xl mx-auto leading-[1.6] sm:text-lg" style="color: #4A4A4A; letter-spacing: 0;">
+            <p class="text-sm font-bold uppercase tracking-wide max-w-2xl mx-auto leading-[1.6]" style="color: #525252;">
               Algumas das obras que refletem a qualidade do nosso trabalho.
             </p>
           </div>
@@ -59,7 +59,7 @@
                         <img src="${obra.image}" alt="${obra.title}" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105" loading="${index === 0 ? 'eager' : 'lazy'}">
                         <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
                         <div class="absolute top-5 left-5">
-                          <span class="inline-flex items-center rounded-lg bg-white/95 backdrop-blur-sm px-3 py-1.5 text-xs font-semibold uppercase tracking-wider" style="color: #F28C28;">
+                          <span class="inline-flex items-center rounded-lg bg-white/95 backdrop-blur-sm px-3 py-1.5 text-xs font-bold uppercase tracking-wider" style="color: #E07B24;">
                             ${obra.badge}
                           </span>
                         </div>
@@ -67,19 +67,19 @@
                       <div class="bg-white p-6 lg:p-10 flex flex-col justify-center">
                         <div class="max-w-lg space-y-5">
                           <div>
-                            <p class="text-xs font-semibold uppercase tracking-[0.05em] mb-3" style="color: #F28C28; letter-spacing: 0.05em;">${obra.client}</p>
-                            <h3 class="text-2xl font-semibold mb-3 leading-tight" style="color: #1C1C1C; letter-spacing: -0.02em;">${obra.title}</h3>
+                            <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24; letter-spacing: 0.15em;">${obra.client}</p>
+                            <h3 class="text-2xl font-bold uppercase mb-3 leading-tight" style="color: #1A1A1A; letter-spacing: -0.02em;">${obra.title}</h3>
                           </div>
-                          <p class="text-sm leading-relaxed mb-6" style="color: #4A4A4A; letter-spacing: 0; line-height: 1.6;">${obra.description}</p>
+                          <p class="text-xs font-bold uppercase tracking-wide leading-relaxed mb-6" style="color: #525252; line-height: 1.6;">${obra.description}</p>
                           <div class="flex flex-wrap gap-3">
-                            <a href="./obras.html" class="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]" style="background-color: #F28C28; box-shadow: 0 4px 14px 0 rgba(242, 140, 40, 0.25);">
+                            <a href="./obras.html" class="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]" style="background-color: #E07B24; box-shadow: 0 4px 14px 0 rgba(224, 123, 36, 0.25);">
                               Ver mais
                               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                               </svg>
                             </a>
-                            <a href="./contato.html" class="inline-flex items-center gap-2 rounded-lg border-2 px-6 py-3 text-sm font-semibold transition-all duration-300 hover:bg-brand-600 hover:text-white hover:border-brand-600 hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]" style="border-color: #F28C28; color: #F28C28; background-color: transparent;">
-                              Solicitar orçamento
+                            <a href="./contato.html" class="inline-flex items-center gap-2 rounded-lg border-2 px-6 py-3 text-xs font-bold uppercase tracking-wider transition-all duration-300 hover:bg-brand-600 hover:text-white hover:border-brand-600 hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]" style="border-color: #E07B24; color: #E07B24; background-color: transparent;">
+                              Orçamento
                             </a>
                           </div>
                         </div>
@@ -108,12 +108,12 @@
             </div>
 
             <div class="text-center mt-3">
-              <p class="text-xs font-medium obras-carousel-counter" style="color: #9B9B9B;">1 / ${obras.length}</p>
+              <p class="text-xs font-bold uppercase tracking-wider obras-carousel-counter" style="color: #9B9B9B;">1 / ${obras.length}</p>
             </div>
           </div>
 
           <div class="text-center mt-10">
-            <a href="./obras.html" class="inline-flex items-center gap-2 rounded-lg border-2 px-8 py-3 text-sm font-semibold transition-all duration-300 hover:bg-brand-600 hover:text-white hover:border-brand-600 hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]" style="border-color: #F28C28; color: #F28C28; background-color: transparent;">
+            <a href="./obras.html" class="inline-flex items-center gap-2 rounded-lg border-2 px-8 py-3 text-xs font-bold uppercase tracking-wider transition-all duration-300 hover:bg-brand-600 hover:text-white hover:border-brand-600 hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]" style="border-color: #E07B24; color: #E07B24; background-color: transparent;">
               Ver todas as obras
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />

@@ -69,13 +69,13 @@ function Hero() {
               CIVIL
             </span>
             <span className="block mt-4 text-lg sm:text-xl lg:text-2xl font-medium uppercase tracking-[0.15em] text-white/90" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>
-              Obras com excelência e transparência
+              Qualidade e agilidade na execução de obras
             </span>
           </h1>
 
           {/* Description */}
           <p className="text-base sm:text-lg text-white/70 max-w-xl mb-10 leading-relaxed" style={{textShadow: '0 2px 6px rgba(0,0,0,0.4)'}}>
-            10 anos transformando projetos em realidade. Engenharia hospitalar, corporativa e residencial.
+            11 anos de experiência em execução de obras hospitalares e industriais com transparência e compromisso.
           </p>
 
           {/* CTAs */}
@@ -97,12 +97,6 @@ function Hero() {
             </Link>
           </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-        <span className="text-xs font-medium uppercase tracking-wider text-white/50">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-white/50 to-transparent"></div>
       </div>
 
       {/* Slide indicators */}
