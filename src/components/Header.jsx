@@ -38,7 +38,7 @@ function Header() {
         {/* Logo */}
         <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center gap-3 transition-opacity hover:opacity-80">
           <img
-            src="/fotos em geral/Logo.jpeg"
+            src="/fotos/logo.jpeg"
             alt="Logo MMKK"
             className="h-10 w-auto object-contain"
           />

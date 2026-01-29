@@ -11,47 +11,24 @@ function ObraGaleria() {
       client: 'Santa Casa de Tupã',
       category: 'Hospitalar',
       description: 'Revitalização completa da maternidade com novos fluxos, salas de atendimento e áreas técnicas modernizadas.',
-      folder: 'Maternidade - Santa Casa de Tupã',
-      images: [
-        'WhatsApp Image 2026-01-07 at 4.13.31 PM.jpeg',
-        'WhatsApp Image 2026-01-07 at 4.13.31 PM(1).jpeg',
-        'WhatsApp Image 2026-01-07 at 4.13.31 PM(2).jpeg',
-        'WhatsApp Image 2026-01-07 at 4.13.32 PM.jpeg',
-        'WhatsApp Image 2026-01-07 at 4.13.32 PM(1).jpeg',
-        'WhatsApp Image 2026-01-07 at 4.13.32 PM(2).jpeg',
-        'WhatsApp Image 2026-01-07 at 4.13.32 PM(3).jpeg'
-      ]
+      folder: 'maternidade',
+      images: ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpeg', '05.jpeg', '06.jpeg', '07.jpeg']
     },
     uti: {
       title: 'UTI C',
       client: 'Santa Casa de Tupã',
       category: 'Hospitalar',
       description: 'Ampliação e modernização da UTI com tecnologia de ponta e fluxos otimizados para melhor atendimento.',
-      folder: 'UTI C - Santa Casa de Tupã',
-      images: [
-        'WhatsApp Image 2026-01-07 at 3.54.34 PM.jpeg',
-        'WhatsApp Image 2026-01-07 at 3.54.34 PM(1).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.54.34 PM(2).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.54.34 PM(4).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.54.35 PM.jpeg',
-        'WhatsApp Image 2026-01-07 at 3.54.35 PM(1).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.54.35 PM(2).jpeg'
-      ]
+      folder: 'uti-c',
+      images: ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpeg', '05.jpeg', '06.jpeg', '07.jpeg']
     },
     banco: {
       title: 'Banco de Sangue',
       client: 'Santa Casa de Tupã',
       category: 'Hospitalar',
       description: 'Construção completa do banco de sangue seguindo todas as normas técnicas e de biossegurança.',
-      folder: 'Banco de Sangue - Santa Casa de Tupã',
-      images: [
-        'WhatsApp Image 2026-01-07 at 3.53.11 PM.jpeg',
-        'WhatsApp Image 2026-01-07 at 3.53.11 PM(1).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.53.12 PM(1).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.53.12 PM(2).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.53.12 PM(3).jpeg',
-        'WhatsApp Image 2026-01-07 at 3.53.12 PM(4).jpeg'
-      ]
+      folder: 'banco-de-sangue',
+      images: ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpeg', '05.jpeg', '06.jpeg']
     }
   }
 
@@ -71,9 +48,7 @@ function ObraGaleria() {
   }
 
   const getImageUrl = (imageName) => {
-    const folder = obra.folder.replace(/ /g, ' ')
-    const file = imageName.replace(/ /g, ' ')
-    return `/obras_realizadas/${folder}/${file}`
+    return `/obras_realizadas/${obra.folder}/${imageName}`
   }
 
   const openLightbox = (index) => {
