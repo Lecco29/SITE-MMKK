@@ -39,7 +39,7 @@ function Obras() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="./fotos em geral/anastasiya-badun-0wljZ9KWNzE-unsplash.jpg"
+            src="/fotos em geral/anastasiya-badun-0wljZ9KWNzE-unsplash.jpg"
             alt="Obras MMKK"
             className="h-full w-full object-cover"
           />

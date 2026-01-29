@@ -7,7 +7,7 @@ function Contato() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="./fotos em geral/akhmad-muzakir-o776uI1UtuQ-unsplash.jpg"
+            src="/fotos em geral/akhmad-muzakir-o776uI1UtuQ-unsplash.jpg"
             alt="Contato MMKK"
             className="h-full w-full object-cover"
           />
