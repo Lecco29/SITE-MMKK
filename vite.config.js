@@ -4,8 +4,9 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/SITE-MMKK/',
   root: '.',
-  publicDir: false,
+  publicDir: 'public',
   server: {
     port: 3000,
     fs: {
