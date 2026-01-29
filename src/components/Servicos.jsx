@@ -6,17 +6,17 @@ function Servicos() {
     {
       icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
       title: 'Execução de Obras',
-      description: 'Qualidade e agilidade na execução de obras hospitalares e industriais.'
+      description: 'Construção de hospitais, clínicas e instalações industriais com qualidade.'
     },
     {
       icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
       title: 'Reformas',
-      description: 'Planejamento para reduzir interferências e entregar ambientes prontos.'
+      description: 'Reformas hospitalares e industriais sem interferir nas operações.'
     },
     {
       icon: 'M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z',
       title: 'Sistemas',
-      description: 'Elétrica e hidráulica com segurança, eficiência e facilidade de manutenção.'
+      description: 'Elétrica e hidráulica para hospitais e indústrias seguindo normas técnicas.'
     },
     {
       icon: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z',
@@ -40,7 +40,7 @@ function Servicos() {
             <span className="block">para sua obra</span>
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
-            Do projeto ao acabamento, uma equipe completa para cada etapa
+            Especialistas em hospitais e indústrias, do projeto ao acabamento
           </p>
         </div>
 
