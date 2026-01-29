@@ -31,7 +31,7 @@ function Contato() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://wa.me/554499326286?text=Olá,%20gostaria%20de%20falar%20sobre%20um%20projeto."
+                href="https://wa.me/5544999326286?text=Olá,%20gostaria%20de%20falar%20sobre%20um%20projeto."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-bold uppercase tracking-wider bg-orange-500 text-white transition-all hover:scale-105"
@@ -42,7 +42,7 @@ function Contato() {
                 WhatsApp
               </a>
               <a
-                href="tel:+554499326286"
+                href="tel:+5544999326286"
                 className="inline-flex items-center rounded-lg px-8 py-4 text-sm font-bold uppercase tracking-wider bg-white text-gray-900 transition-all hover:scale-105"
               >
                 Ligar agora
@@ -78,8 +78,8 @@ function Contato() {
                 </svg>
               </div>
               <p className="text-xs font-bold uppercase tracking-wider text-orange-500 mb-2">Telefone</p>
-              <a href="tel:+554499326286" className="text-lg font-bold text-gray-900 hover:text-orange-500 transition-colors">
-                (44) 9932-6286
+              <a href="tel:+5544999326286" className="text-lg font-bold text-gray-900 hover:text-orange-500 transition-colors">
+                (44) 99932-6286
               </a>
             </article>
 

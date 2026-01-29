@@ -29,7 +29,7 @@ function Contato() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://wa.me/554499326286?text=Ola,%20gostaria%20de%20falar%20sobre%20um%20projeto."
+                href="https://wa.me/5544999326286?text=Ola,%20gostaria%20de%20falar%20sobre%20um%20projeto."
                 className="group inline-flex items-center gap-3 rounded-lg px-8 py-4 text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:scale-105 bg-orange-500 text-white"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function Contato() {
                 WhatsApp
               </a>
               <a
-                href="tel:+554499326286"
+                href="tel:+5544999326286"
                 className="inline-flex items-center gap-3 rounded-lg px-8 py-4 text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:bg-white hover:text-gray-900 border border-white/20 text-white bg-white/5"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -53,14 +53,14 @@ function Contato() {
 
           {/* Right - Contact Cards */}
           <div className="grid gap-4 sm:grid-cols-2">
-            <a href="tel:+554499326286" className="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-orange-500/50">
+            <a href="tel:+5544999326286" className="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-orange-500/50">
               <div className="w-12 h-12 rounded-xl bg-orange-500 flex items-center justify-center mb-5">
                 <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </div>
               <p className="text-xs font-bold uppercase tracking-[0.15em] mb-2 text-orange-500">Telefone</p>
-              <p className="text-lg font-bold text-white">(44) 9932-6286</p>
+              <p className="text-lg font-bold text-white">(44) 99932-6286</p>
             </a>
 
             <a href="mailto:e.makoto@mmkk.com.br" className="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-orange-500/50">

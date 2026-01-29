@@ -63,11 +63,14 @@ function Hero() {
 
           {/* Main Headline - Following reference style */}
           <h1 className="mb-8">
-            <span className="block text-5xl sm:text-6xl lg:text-8xl font-bold uppercase text-white" style={{letterSpacing: '-0.02em', lineHeight: 1, textShadow: '0 4px 12px rgba(0,0,0,0.5)'}}>
-              CONSTRUÇÃO
+            <span className="block text-4xl sm:text-5xl lg:text-7xl font-bold uppercase text-white" style={{letterSpacing: '-0.02em', lineHeight: 1, textShadow: '0 4px 12px rgba(0,0,0,0.5)'}}>
+              MMKK
             </span>
-            <span className="inline-block mt-2 px-4 py-1 text-5xl sm:text-6xl lg:text-8xl font-bold uppercase bg-orange-500 text-white" style={{letterSpacing: '-0.02em', lineHeight: 1.2, boxShadow: '0 4px 20px rgba(0,0,0,0.3)'}}>
-              CIVIL
+            <span className="inline-block mt-2 px-4 py-1 text-4xl sm:text-5xl lg:text-7xl font-bold uppercase bg-orange-500 text-white" style={{letterSpacing: '-0.02em', lineHeight: 1.2, boxShadow: '0 4px 20px rgba(0,0,0,0.3)'}}>
+              ENGENHARIA
+            </span>
+            <span className="block mt-2 text-4xl sm:text-5xl lg:text-7xl font-bold uppercase text-white" style={{letterSpacing: '-0.02em', lineHeight: 1, textShadow: '0 4px 12px rgba(0,0,0,0.5)'}}>
+              E CONSTRUÇÕES
             </span>
             <span className="block mt-4 text-lg sm:text-xl lg:text-2xl font-medium uppercase tracking-[0.15em] text-white/90" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>
               Qualidade e agilidade na execução de obras

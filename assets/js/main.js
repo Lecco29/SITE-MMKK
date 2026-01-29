@@ -849,7 +849,7 @@ if (contactForm) {
       
       // Redirecionar para WhatsApp com mensagem pré-formatada
       const mensagem = `Olá, meu nome é ${data.nome}.\n\nE-mail: ${data.email}\nTelefone: ${data.telefone}\nAssunto: ${data.assunto}\n\nMensagem:\n${data.mensagem}`;
-      const whatsappUrl = `https://wa.me/554499326286?text=${encodeURIComponent(mensagem)}`;
+      const whatsappUrl = `https://wa.me/5544999326286?text=${encodeURIComponent(mensagem)}`;
       
       // Mostrar mensagem de sucesso
       formMessage.className = 'p-4 rounded-lg text-sm font-medium bg-green-50 text-green-600';

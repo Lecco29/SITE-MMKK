@@ -49,12 +49,12 @@ function Footer() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] mb-4 text-orange-500">Contato</p>
             <div className="flex flex-col gap-3 mb-6">
-              <a className="text-sm text-gray-400 hover:text-white transition-colors" href="tel:+554499326286">(44) 9932-6286</a>
+              <a className="text-sm text-gray-400 hover:text-white transition-colors" href="tel:+5544999326286">(44) 99932-6286</a>
               <a className="text-sm text-gray-400 hover:text-white transition-colors" href="mailto:e.makoto@mmkk.com.br">e.makoto@mmkk.com.br</a>
               <p className="text-sm text-gray-400">R. Estados Unidos, 1930<br/>Tupã - SP</p>
             </div>
             <a
-              href="https://wa.me/554499326286"
+              href="https://wa.me/5544999326286"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-orange-500 text-white text-sm font-bold transition-all hover:bg-orange-600"

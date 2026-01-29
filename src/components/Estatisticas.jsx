@@ -3,7 +3,7 @@ import React from 'react'
 function Estatisticas() {
   const stats = [
     { value: '10+', label: 'Anos de mercado' },
-    { value: '500+', label: 'Projetos entregues' },
+    { value: '60+', label: 'Projetos entregues' },
     { value: '100%', label: 'Clientes satisfeitos' },
     { value: '95%', label: 'Entregas no prazo' }
   ]
