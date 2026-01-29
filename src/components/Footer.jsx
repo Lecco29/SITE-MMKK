@@ -1,86 +1,82 @@
-import React, { memo, useMemo } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Footer = memo(() => {
-  const currentYear = useMemo(() => new Date().getFullYear(), [])
+function Footer() {
+  const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t" style={{borderColor: '#404040', backgroundColor: '#2F2F2F'}} role="contentinfo">
-      <div className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-3">
-              <img src="./fotos%20em%20geral/Logo.jpeg" alt="Logo MMKK Engenharia e Construções" className="h-10 w-auto object-contain" loading="lazy" />
+    <footer className="bg-gray-900 border-t border-gray-800">
+      <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8 lg:py-16">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
+          {/* Logo & Description */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="./fotos%20em%20geral/Logo.jpeg" alt="Logo MMKK" className="h-10 w-auto object-contain" />
               <div>
-                <p className="text-base font-semibold leading-tight" style={{color: '#FFFFFF'}}>MMKK</p>
-                <p className="text-xs leading-tight" style={{color: '#FFFFFF'}}>Engenharia & Construções</p>
+                <p className="text-base font-bold uppercase tracking-wide text-white">MMKK</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400">Engenharia & Construções</p>
               </div>
             </div>
-            <p className="text-sm max-w-md leading-relaxed" style={{color: '#FFFFFF', lineHeight: '1.6'}}>
-              Engenharia, gestão de obras e entregas com excelência. Mais de 40 anos transformando projetos em realidade.
+            <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
+              10 anos transformando projetos em realidade com qualidade e agilidade.
             </p>
           </div>
-          
+
+          {/* Navigation */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.05em] mb-3" style={{color: '#FFFFFF', letterSpacing: '0.05em'}}>Navegação</p>
-            <nav className="flex flex-col gap-2" aria-label="Navegação do rodapé">
-              <Link to="/" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Início</Link>
-              <Link to="/servicos" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Serviços</Link>
-              <Link to="/obras" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Obras</Link>
-              <Link to="/contato" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Contato</Link>
+            <p className="text-xs font-bold uppercase tracking-[0.15em] mb-4 text-orange-500">Navegação</p>
+            <nav className="flex flex-col gap-3">
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/">Início</Link>
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Serviços</Link>
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/obras">Obras</Link>
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/contato">Contato</Link>
             </nav>
           </div>
-          
+
+          {/* Services */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.05em] mb-3" style={{color: '#FFFFFF', letterSpacing: '0.05em'}}>Serviços</p>
-            <nav className="flex flex-col gap-2" aria-label="Serviços oferecidos">
-              <Link to="/servicos" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Construção Civil</Link>
-              <Link to="/servicos" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Reformas</Link>
-              <Link to="/servicos" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Sistemas</Link>
-              <Link to="/servicos" className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}}>Gestão</Link>
+            <p className="text-xs font-bold uppercase tracking-[0.15em] mb-4 text-orange-500">Serviços</p>
+            <nav className="flex flex-col gap-3">
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Construção Civil</Link>
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Reformas</Link>
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Sistemas</Link>
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Gestão de Obra</Link>
             </nav>
           </div>
-          
+
+          {/* Contact */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.05em] mb-3" style={{color: '#FFFFFF', letterSpacing: '0.05em'}}>Contato</p>
-            <div className="flex flex-col gap-2 mb-4">
-              <a className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}} href="tel:+554499326286" aria-label="Ligar para (44) 9932-6286">
-                (44) 9932-6286
-              </a>
-              <a className="text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors" style={{color: '#FFFFFF', lineHeight: '1.5', display: 'block'}} href="mailto:contato@mmkk.com.br" aria-label="Enviar e-mail para contato@mmkk.com.br">
-                contato@mmkk.com.br
-              </a>
+            <p className="text-xs font-bold uppercase tracking-[0.15em] mb-4 text-orange-500">Contato</p>
+            <div className="flex flex-col gap-3 mb-6">
+              <a className="text-sm text-gray-400 hover:text-white transition-colors" href="tel:+554499326286">(44) 9932-6286</a>
+              <a className="text-sm text-gray-400 hover:text-white transition-colors" href="mailto:e.makoto@mmkk.com.br">e.makoto@mmkk.com.br</a>
+              <p className="text-sm text-gray-400">R. Estados Unidos, 1930<br/>Tupã - SP</p>
             </div>
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.05em] mb-2" style={{color: '#FFFFFF', letterSpacing: '0.05em'}}>Redes Sociais</p>
-              <a 
-                href="https://wa.me/554499326286" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2" 
-                style={{backgroundColor: '#25D366', color: '#FFFFFF'}}
-                aria-label="Falar via WhatsApp"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2a9.94 9.94 0 0 0-7.07 2.93A9.94 9.94 0 0 0 2 12c0 1.7.43 3.34 1.25 4.79L2 22l5.34-1.21A10.02 10.02 0 0 0 12 22c2.67 0 5.18-1.04 7.07-2.93A9.94 9.94 0 0 0 22 12c0-2.67-1.04-5.18-2.93-7.07A9.94 9.94 0 0 0 12 2z"/>
-                </svg>
-              </a>
-            </div>
+            <a
+              href="https://wa.me/554499326286"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-orange-500 text-white text-sm font-bold transition-all hover:bg-orange-600"
+            >
+              <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              </svg>
+              WhatsApp
+            </a>
           </div>
         </div>
       </div>
-      <div className="border-t py-3" style={{borderColor: '#404040'}}>
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <p className="text-center text-sm leading-relaxed" style={{color: '#FFFFFF'}}>
-            © MMKK Engenharia & Construções {currentYear}. Todos os direitos reservados.
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-800">
+        <div className="mx-auto max-w-7xl px-4 py-4 lg:px-8">
+          <p className="text-center text-xs text-gray-500">
+            © {currentYear} MMKK Engenharia & Construções. Todos os direitos reservados.
           </p>
         </div>
       </div>
     </footer>
   )
-})
-
-Footer.displayName = 'Footer'
+}
 
 export default Footer
-

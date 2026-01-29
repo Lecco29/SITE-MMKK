@@ -1,88 +1,139 @@
-/* Sistema de Tipografia Moderno e Minimalista */
-* {
+/* ============================================
+   DESIGN SYSTEM MMKK - ESTILO APPLE
+   Minimalista, Consistente, Elegante
+   ============================================ */
+:root {
+  /* Cores - Paleta Mínima */
+  --color-primary: #E07B24;
+  --color-text: #1d1d1f;
+  --color-text-secondary: #86868b;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f5f7;
+  --color-border: #d2d2d7;
+
+  /* Espaçamentos */
+  --section-py: clamp(64px, 8vw, 100px);
+  --container-max: 980px;
+}
+
+/* Reset */
+*, *::before, *::after {
   box-sizing: border-box;
-}
-
-html {
-  overflow-x: hidden;
-  width: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-body {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #FFFFFF;
-  color: #1C1C1C;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Headings - Padronizados */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: #1C1C1C;
-  line-height: 1.2;
-  margin: 0;
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 2.5rem; /* 40px */
-  font-weight: 700;
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* ============================================
+   TIPOGRAFIA APPLE-STYLE
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--color-text);
   line-height: 1.1;
 }
 
+h1 {
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 600;
+}
+
 h2 {
-  font-size: 2rem; /* 32px */
+  font-size: clamp(32px, 5vw, 48px);
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.5rem; /* 24px */
+  font-size: clamp(24px, 3vw, 28px);
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1.25rem; /* 20px */
+  font-size: 21px;
   font-weight: 600;
 }
 
-h5 {
-  font-size: 1.125rem; /* 18px */
-  font-weight: 600;
-}
-
-h6 {
-  font-size: 1rem; /* 16px */
-  font-weight: 600;
-}
-
-/* Textos - Padronizados */
 p {
-  color: #4A4A4A;
-  font-size: 1rem; /* 16px */
-  line-height: 1.7;
-  letter-spacing: 0;
-  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
-/* Botões e Links */
-button, a, .btn-primary, .btn-secondary {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+/* Texto grande para descrições */
+.text-large {
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+/* Label/Eyebrow */
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+button, a {
+  font-family: inherit;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 17px;
   font-weight: 500;
-  letter-spacing: 0;
-  font-size: 1rem;
+  color: #fff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 980px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-primary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  text-decoration: underline;
 }
 
 /* Tamanhos de texto padronizados */
@@ -205,7 +256,7 @@ button, a, .btn-primary, .btn-secondary {
   padding: 0.4rem 0.8rem;
   font-weight: 600;
   background: #F2F2F2;
-  color: #1C1C1C;
+  color: #1A1A1A;
   border: 1px solid #E5E5E5;
 }
 
@@ -536,39 +587,14 @@ p {
   top: 0;
 }
 
-/* Overlay fixo e permanente sobre as imagens - sempre visível */
+/* Overlay removido - imagens sem escurecimento */
 .hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.65)
-  );
-  pointer-events: none;
-  /* Garantir que o overlay sempre fique visível */
-  opacity: 1 !important;
-  display: block !important;
+  display: none !important;
 }
 
-/* Gradiente laranja sutil sobre o overlay escuro */
+/* Gradiente laranja removido */
 .hero-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    135deg,
-    rgba(242, 140, 40, 0.15) 0%,
-    transparent 50%
-  );
-  pointer-events: none;
-  /* Garantir que o overlay sempre fique visível */
-  opacity: 1 !important;
-  display: block !important;
+  display: none !important;
 }
 
 .hero-bg {
@@ -617,43 +643,19 @@ p {
 .hero-section h2,
 .hero-section h3,
 .hero-section p,
-.hero-section span:not(.text-\[#F28C28\]),
+.hero-section span:not(.text-\[#E07B24\]),
 .hero-section a:not([style*="background"]),
 .hero-section .text-white {
   color: #FFFFFF !important;
 }
 
-/* Overlay para a seção hero de Obras Realizadas - igual à página inicial */
+/* Overlay removido - Obras Realizadas */
 .obras-hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.65)
-  ) !important;
-  pointer-events: none;
-  opacity: 1 !important;
-  display: block !important;
+  display: none !important;
 }
 
-/* Gradiente laranja sutil sobre o overlay escuro - Obras Realizadas */
 .obras-hero-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    135deg,
-    rgba(242, 140, 40, 0.15) 0%,
-    transparent 50%
-  ) !important;
-  pointer-events: none;
-  opacity: 1 !important;
-  display: block !important;
+  display: none !important;
 }
 
 /* Garantir que todos os textos da seção Hero de Obras sejam brancos */
@@ -661,43 +663,19 @@ p {
 .obras-hero-section h2,
 .obras-hero-section h3,
 .obras-hero-section p,
-.obras-hero-section span:not([style*="color: #F28C28"]),
+.obras-hero-section span:not([style*="color: #E07B24"]),
 .obras-hero-section a:not([style*="background"]),
 .obras-hero-section .text-white {
   color: #FFFFFF !important;
 }
 
-/* Overlay para a seção hero de Fale Conosco - igual à página Obras Realizadas */
+/* Overlay removido - Fale Conosco */
 .contato-hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.65)
-  ) !important;
-  pointer-events: none;
-  opacity: 1 !important;
-  display: block !important;
+  display: none !important;
 }
 
-/* Gradiente laranja sutil sobre o overlay escuro - Fale Conosco */
 .contato-hero-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    135deg,
-    rgba(242, 140, 40, 0.15) 0%,
-    transparent 50%
-  ) !important;
-  pointer-events: none;
-  opacity: 1 !important;
-  display: block !important;
+  display: none !important;
 }
 
 /* Garantir que todos os textos da seção Hero de Fale Conosco sejam brancos */
@@ -705,7 +683,7 @@ p {
 .contato-hero-section h2,
 .contato-hero-section h3,
 .contato-hero-section p,
-.contato-hero-section span:not([style*="color: #F28C28"]),
+.contato-hero-section span:not([style*="color: #E07B24"]),
 .contato-hero-section a:not([style*="background"]),
 .contato-hero-section .text-white {
   color: #FFFFFF !important;
@@ -729,47 +707,47 @@ p {
 
 /* Seção Sobre - Texto branco (exceto textos específicos que devem ser pretos) */
 #sobre .sobre-text-white,
-#sobre p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #FFFFFF"]):not(.text-black),
-#sobre h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black),
-#sobre h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black) {
+#sobre p:not([style*="color: #1A1A1A"]):not([style*="color: #525252"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#sobre h2:not([style*="color: #1A1A1A"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#sobre h3:not([style*="color: #1A1A1A"]):not([style*="color: #FFFFFF"]):not(.text-black) {
   color: #FFFFFF !important;
 }
 
 /* Garantir que textos específicos na seção Sobre fiquem pretos desde o início */
-#sobre p[style*="color: #1C1C1C"],
-#sobre p[style*="color: #4A4A4A"],
-#sobre span[style*="color: #1C1C1C"],
-#sobre span[style*="color: #4A4A4A"],
-#sobre h3[style*="color: #1C1C1C"],
-#sobre a[style*="color: #1C1C1C"],
-#sobre .text-sm[style*="color: #1C1C1C"],
-#sobre .text-xs[style*="color: #4A4A4A"] {
-  color: #1C1C1C !important;
+#sobre p[style*="color: #1A1A1A"],
+#sobre p[style*="color: #525252"],
+#sobre span[style*="color: #1A1A1A"],
+#sobre span[style*="color: #525252"],
+#sobre h3[style*="color: #1A1A1A"],
+#sobre a[style*="color: #1A1A1A"],
+#sobre .text-sm[style*="color: #1A1A1A"],
+#sobre .text-xs[style*="color: #525252"] {
+  color: #1A1A1A !important;
 }
 
-#sobre .text-xs[style*="color: #4A4A4A"] {
-  color: #4A4A4A !important;
+#sobre .text-xs[style*="color: #525252"] {
+  color: #525252 !important;
 }
 
 /* Garantir que textos específicos na seção Sobre fiquem pretos desde o início */
-#sobre p[style*="color: #1C1C1C"],
-#sobre p[style*="color: #4A4A4A"],
-#sobre span[style*="color: #1C1C1C"],
-#sobre span[style*="color: #4A4A4A"],
-#sobre h3[style*="color: #1C1C1C"],
-#sobre a[style*="color: #1C1C1C"],
+#sobre p[style*="color: #1A1A1A"],
+#sobre p[style*="color: #525252"],
+#sobre span[style*="color: #1A1A1A"],
+#sobre span[style*="color: #525252"],
+#sobre h3[style*="color: #1A1A1A"],
+#sobre a[style*="color: #1A1A1A"],
 #sobre a[style*="color: #FF7A00"],
-#sobre .text-sm[style*="color: #1C1C1C"],
-#sobre .text-xs[style*="color: #4A4A4A"],
-#sobre article p[style*="color: #1C1C1C"],
-#sobre article p[style*="color: #4A4A4A"],
-#sobre article h3[style*="color: #1C1C1C"] {
-  color: #1C1C1C !important;
+#sobre .text-sm[style*="color: #1A1A1A"],
+#sobre .text-xs[style*="color: #525252"],
+#sobre article p[style*="color: #1A1A1A"],
+#sobre article p[style*="color: #525252"],
+#sobre article h3[style*="color: #1A1A1A"] {
+  color: #1A1A1A !important;
 }
 
-#sobre .text-xs[style*="color: #4A4A4A"],
-#sobre p[style*="color: #4A4A4A"] {
-  color: #4A4A4A !important;
+#sobre .text-xs[style*="color: #525252"],
+#sobre p[style*="color: #525252"] {
+  color: #525252 !important;
 }
 
 #sobre p[style*="opacity"] {
@@ -778,9 +756,9 @@ p {
 
 /* Seção Contato - Texto branco (exceto textos específicos que devem ser pretos) */
 #contato .contato-text-white,
-#contato p:not([style*="color: #1C1C1C"]):not([style*="color: #4A4A4A"]):not([style*="color: #6B7280"]):not([style*="color: #9B9B9B"]):not([style*="color: #FFFFFF"]):not(.text-black),
-#contato h2:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black),
-#contato h3:not([style*="color: #1C1C1C"]):not([style*="color: #FFFFFF"]):not(.text-black) {
+#contato p:not([style*="color: #1A1A1A"]):not([style*="color: #525252"]):not([style*="color: #6B7280"]):not([style*="color: #9B9B9B"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#contato h2:not([style*="color: #1A1A1A"]):not([style*="color: #FFFFFF"]):not(.text-black),
+#contato h3:not([style*="color: #1A1A1A"]):not([style*="color: #FFFFFF"]):not(.text-black) {
   color: #FFFFFF !important;
 }
 
@@ -789,25 +767,25 @@ p {
   color: inherit !important;
 }
 
-#contato p[style*="color: #1C1C1C"],
-#contato span[style*="color: #1C1C1C"],
-#contato h3[style*="color: #1C1C1C"],
-#contato a[style*="color: #1C1C1C"],
-#contato .text-xs[style*="color: #1C1C1C"],
-#contato .text-base[style*="color: #1C1C1C"],
-#contato .text-sm[style*="color: #1C1C1C"],
-#contato .text-xl[style*="color: #1C1C1C"],
-#contato .text-lg[style*="color: #1C1C1C"],
-#contato .text-2xl[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] h3[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] a[style*="color: #1C1C1C"] {
-  color: #1C1C1C !important;
+#contato p[style*="color: #1A1A1A"],
+#contato span[style*="color: #1A1A1A"],
+#contato h3[style*="color: #1A1A1A"],
+#contato a[style*="color: #1A1A1A"],
+#contato .text-xs[style*="color: #1A1A1A"],
+#contato .text-base[style*="color: #1A1A1A"],
+#contato .text-sm[style*="color: #1A1A1A"],
+#contato .text-xl[style*="color: #1A1A1A"],
+#contato .text-lg[style*="color: #1A1A1A"],
+#contato .text-2xl[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] h3[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] a[style*="color: #1A1A1A"] {
+  color: #1A1A1A !important;
 }
 
-#contato p[style*="color: #4A4A4A"] {
-  color: #4A4A4A !important;
+#contato p[style*="color: #525252"] {
+  color: #525252 !important;
 }
 
 #contato p[style*="color: #6B7280"],
@@ -815,28 +793,28 @@ p {
   color: #6B7280 !important;
 }
 
-#contato span[style*="color: #1C1C1C"] {
-  color: #1C1C1C !important;
+#contato span[style*="color: #1A1A1A"] {
+  color: #1A1A1A !important;
 }
 
 /* Garantir que textos específicos na seção Contato fiquem pretos */
-#contato p[style*="color: #1C1C1C"],
-#contato p[style*="color: #4A4A4A"],
+#contato p[style*="color: #1A1A1A"],
+#contato p[style*="color: #525252"],
 #contato p[style*="color: #6B7280"],
-#contato h3[style*="color: #1C1C1C"],
-#contato a[style*="color: #1C1C1C"],
-#contato span[style*="color: #1C1C1C"],
-#contato p.text-xs[style*="color: #1C1C1C"],
-#contato p.text-xs[style*="color: #F28C28"] {
-  color: #1C1C1C !important;
+#contato h3[style*="color: #1A1A1A"],
+#contato a[style*="color: #1A1A1A"],
+#contato span[style*="color: #1A1A1A"],
+#contato p.text-xs[style*="color: #1A1A1A"],
+#contato p.text-xs[style*="color: #E07B24"] {
+  color: #1A1A1A !important;
 }
 
-#contato p[style*="color: #4A4A4A"] {
-  color: #4A4A4A !important;
+#contato p[style*="color: #525252"] {
+  color: #525252 !important;
 }
 
 #contato p[style*="color: #6B7280"] {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 #contato p[style*="opacity"] {
@@ -907,7 +885,7 @@ p {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px -5px rgba(242, 140, 40, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(224, 123, 36, 0.4);
 }
 
 .btn-primary:active {
@@ -1031,7 +1009,7 @@ a:not(.btn-primary):not(.btn-secondary):not(.header-nav-link):hover::after {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #F28C28;
+  background-color: #E07B24;
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
@@ -1096,7 +1074,7 @@ html {
   clip: auto;
   white-space: normal;
   z-index: 9999;
-  background-color: #F28C28;
+  background-color: #E07B24;
   color: white;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -1105,18 +1083,18 @@ html {
 
 /* Focus visible para melhor acessibilidade */
 *:focus-visible {
-  outline: 2px solid #F28C28;
+  outline: 2px solid #E07B24;
   outline-offset: 2px;
 }
 
 /* Melhorar contraste de links */
 a:not(.btn-primary):not(.btn-secondary):not([class*="text-white"]) {
-  color: #1C1C1C;
+  color: #1A1A1A;
   text-decoration: none;
 }
 
 a:not(.btn-primary):not(.btn-secondary):not([class*="text-white"]):hover {
-  color: #F28C28;
+  color: #E07B24;
 }
 
 /* Estados de loading e transição */
@@ -1178,50 +1156,50 @@ header.header-transparent {
 /* PÁGINA INICIAL - Header transparente (sem scrolled) = LOGO PRETA, TEXTO BRANCO */
 body.index-page header.header-transparent:not(.scrolled) .header-logo-text,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-logo-text {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 body.index-page header.header-transparent:not(.scrolled) .header-logo-subtext,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-logo-subtext {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 body.index-page header.header-transparent:not(.scrolled) .header-nav-link,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-nav-link {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 /* PÁGINA INICIAL - Header scrolled (branco) = TEXTO PRETO */
 body.index-page header.header-transparent.scrolled .header-logo-text,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-logo-text {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 body.index-page header.header-transparent.scrolled .header-logo-subtext,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-logo-subtext {
-  color: #4A4A4A !important;
+  color: #525252 !important;
 }
 
 body.index-page header.header-transparent.scrolled .header-nav-link,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-nav-link {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 /* Logo sempre preta em todas as páginas, mesmo quando transparente */
 header.header-transparent .header-logo-text,
 header.header-transparent:not(.scrolled) .header-logo-text,
 header.header-transparent.scrolled .header-logo-text {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 header.header-transparent .header-logo-subtext,
 header.header-transparent:not(.scrolled) .header-logo-subtext,
 header.header-transparent.scrolled .header-logo-subtext {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 header.header-transparent .header-nav-link {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 /* Removido - todas as páginas agora usam texto escuro */
@@ -1229,56 +1207,56 @@ header.header-transparent .header-nav-link {
 /* Hover - Página inicial transparente = preto, scrolled = laranja */
 body.index-page header.header-transparent:not(.scrolled) .header-nav-link:hover,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-nav-link:hover {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
   background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
 body.index-page header.header-transparent.scrolled .header-nav-link:hover,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-nav-link:hover {
-  color: #F28C28 !important;
+  color: #E07B24 !important;
   background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
 header.header-transparent .header-nav-link:hover {
-  color: #F28C28 !important;
+  color: #E07B24 !important;
   background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
 /* Link ativo - Página inicial transparente = laranja, scrolled = laranja */
 body.index-page header.header-transparent:not(.scrolled) .header-nav-active,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-nav-active {
-  color: #F28C28 !important;
-  background-color: rgba(242, 140, 40, 0.1) !important;
+  color: #E07B24 !important;
+  background-color: rgba(224, 123, 36, 0.1) !important;
 }
 
 body.index-page header.header-transparent.scrolled .header-nav-active,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-nav-active {
-  color: #F28C28 !important;
-  background-color: rgba(242, 140, 40, 0.08) !important;
+  color: #E07B24 !important;
+  background-color: rgba(224, 123, 36, 0.08) !important;
 }
 
 header.header-transparent .header-nav-active {
-  color: #F28C28 !important;
-  background-color: rgba(242, 140, 40, 0.15) !important;
+  color: #E07B24 !important;
+  background-color: rgba(224, 123, 36, 0.15) !important;
 }
 
 /* Botão menu - Página inicial transparente = preto, scrolled = preto */
 body.index-page header.header-transparent:not(.scrolled) .header-menu-btn,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-menu-btn {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
   border-color: rgba(0, 0, 0, 0.15) !important;
   background-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 body.index-page header.header-transparent.scrolled .header-menu-btn,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-menu-btn {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
   background-color: transparent !important;
 }
 
 header.header-transparent .header-menu-btn {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
   border-color: rgba(0, 0, 0, 0.15) !important;
   background-color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -1303,7 +1281,7 @@ header.header-transparent .header-nav-link.hover\:bg-gray-50:hover {
 }
 
 header.header-transparent .header-nav-link.hover\:text-brand-600:hover {
-  color: #F28C28 !important;
+  color: #E07B24 !important;
 }
 
 /* Link ativo - underline já está definido acima */
@@ -1313,7 +1291,7 @@ body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-pag
 body.contato-page header.header-transparent.scrolled .header-nav-link,
 body.obras-page header.header-transparent.scrolled .header-nav-link,
 body.servicos-page header.header-transparent.scrolled .header-nav-link {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-nav-link:hover,
@@ -1327,29 +1305,29 @@ body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-pag
 body.contato-page header.header-transparent.scrolled .header-nav-active,
 body.obras-page header.header-transparent.scrolled .header-nav-active,
 body.servicos-page header.header-transparent.scrolled .header-nav-active {
-  color: #F28C28 !important;
-  background-color: rgba(242, 140, 40, 0.08) !important;
+  color: #E07B24 !important;
+  background-color: rgba(224, 123, 36, 0.08) !important;
 }
 
 body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-logo-text,
 body.contato-page header.header-transparent.scrolled .header-logo-text,
 body.obras-page header.header-transparent.scrolled .header-logo-text,
 body.servicos-page header.header-transparent.scrolled .header-logo-text {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-logo-subtext,
 body.contato-page header.header-transparent.scrolled .header-logo-subtext,
 body.obras-page header.header-transparent.scrolled .header-logo-subtext,
 body.servicos-page header.header-transparent.scrolled .header-logo-subtext {
-  color: #4A4A4A !important;
+  color: #525252 !important;
 }
 
 body:not(.index-page):not(:not(.contato-page):not(.obras-page):not(.servicos-page)) header.header-transparent.scrolled .header-menu-btn,
 body.contato-page header.header-transparent.scrolled .header-menu-btn,
 body.obras-page header.header-transparent.scrolled .header-menu-btn,
 body.servicos-page header.header-transparent.scrolled .header-menu-btn {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
   background-color: transparent !important;
 }
@@ -1376,7 +1354,7 @@ body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu but
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu a,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu .mobile-menu-link,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu button {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu a:hover,
@@ -1384,7 +1362,7 @@ body.index-page header.header-transparent:not(.scrolled) .header-mobile-menu .mo
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu a:hover,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent:not(.scrolled) .header-mobile-menu .mobile-menu-link:hover {
   background-color: rgba(0, 0, 0, 0.05) !important;
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 /* Menu mobile - Página inicial scrolled = fundo branco, texto preto */
@@ -1398,7 +1376,7 @@ body.index-page header.header-transparent.scrolled .header-mobile-menu a,
 body.index-page header.header-transparent.scrolled .header-mobile-menu .mobile-menu-link,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu a,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu .mobile-menu-link {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 body.index-page header.header-transparent.scrolled .header-mobile-menu a:hover,
@@ -1406,7 +1384,7 @@ body.index-page header.header-transparent.scrolled .header-mobile-menu .mobile-m
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu a:hover,
 body:not(.contato-page):not(.obras-page):not(.servicos-page) header.header-transparent.scrolled .header-mobile-menu .mobile-menu-link:hover {
   background-color: rgba(0, 0, 0, 0.05) !important;
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
 /* Menu mobile - Outras páginas (regras gerais - menor especificidade) */
@@ -1508,7 +1486,7 @@ a[href*="wa.me"][class*="fixed"] {
 
 /* Melhorar contraste e acessibilidade */
 :focus-visible {
-  outline: 2px solid #F28C28;
+  outline: 2px solid #E07B24;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -1597,7 +1575,7 @@ nav a[aria-current="page"]:not(.header-nav-link)::after {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #F28C28;
+  background-color: #E07B24;
 }
 
 /* Para header-nav-link, apenas ajustar font-weight */
@@ -1619,7 +1597,7 @@ a[href*="contato.html"].header-nav-link.header-nav-active {
 
 /* Melhorar estados de hover em navegação */
 nav a:not([aria-current="page"]):hover {
-  color: #F28C28;
+  color: #E07B24;
   transform: translateY(-1px);
 }
 
@@ -1654,7 +1632,7 @@ footer nav a:hover {
   transition: color 0.2s ease !important;
   animation: none !important;
   transform: none !important;
-  color: #F28C28 !important;
+  color: #E07B24 !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
@@ -1718,7 +1696,7 @@ a[role="button"] {
 
 /* Melhorar feedback visual de interações */
 * {
-  -webkit-tap-highlight-color: rgba(242, 140, 40, 0.2);
+  -webkit-tap-highlight-color: rgba(224, 123, 36, 0.2);
 }
 
 /* Loading states e skeletons */
@@ -1768,7 +1746,7 @@ a[role="button"] {
 
 /* Melhorar acessibilidade - contraste e navegação por teclado */
 :focus-visible {
-  outline: 3px solid #F28C28;
+  outline: 3px solid #E07B24;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -1777,7 +1755,7 @@ a[role="button"] {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #F28C28;
+  background: #E07B24;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
@@ -1791,7 +1769,7 @@ a[role="button"] {
 
 /* Melhorar contraste de texto */
 .text-low-contrast {
-  color: #4A4A4A;
+  color: #525252;
 }
 
 /* Melhorar legibilidade em diferentes dispositivos */
@@ -1866,10 +1844,10 @@ button[onclick*="obras"] {
 
 /* Paleta de Cores MMKK */
 :root {
-  --color-primary: #F28C28;
+  --color-primary: #E07B24;
   --color-primary-dark: #D9771E;
-  --color-grafite: #1C1C1C;
-  --color-gray-dark: #4A4A4A;
+  --color-grafite: #1A1A1A;
+  --color-gray-dark: #525252;
   --color-gray-medium: #9B9B9B;
   --color-gray-light: #F2F2F2;
   --color-concrete: #E5E5E5;
@@ -2037,21 +2015,21 @@ section + section {
 
 /* Melhorias de Acessibilidade */
 *:focus-visible {
-  outline: 2px solid #F28C28 !important;
+  outline: 2px solid #E07B24 !important;
   outline-offset: 2px !important;
   border-radius: 4px;
 }
 
 /* Melhor contraste para links */
 a:not(.btn-primary):not(.btn-secondary) {
-  color: #1C1C1C;
+  color: #1A1A1A;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 a:not(.btn-primary):not(.btn-secondary):hover {
-  color: #F28C28;
+  color: #E07B24;
   text-decoration-thickness: 2px;
 }
 
@@ -2060,7 +2038,7 @@ a:not(.btn-primary):not(.btn-secondary):hover {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #F28C28;
+  background: #E07B24;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
@@ -2074,7 +2052,7 @@ a:not(.btn-primary):not(.btn-secondary):hover {
 
 /* Melhorar contraste de texto */
 p, span, div {
-  color: #1C1C1C;
+  color: #1A1A1A;
 }
 
 /* Performance - Otimizar animações */
@@ -2109,51 +2087,22 @@ section[style*="background-color:#FFFFFF"] + section[style*="background-color:#F
   }
 }
 
-/* Garantir que todos os textos da seção de estatísticas fiquem brancos */
-section[style*="background: linear-gradient(135deg, #FF7A00"],
-section[style*="background:linear-gradient(135deg, #FF7A00"],
-section[aria-label="Estatísticas e resultados"],
-section[aria-label*="Estatísticas"] {
-  color: #FFFFFF !important;
+/* Seção de Estatísticas - Estilo Apple */
+section[aria-label="Estatísticas"] {
+  background: #f5f5f7;
 }
 
-/* Garantir que título e descrição da seção de estatísticas sejam sempre visíveis */
-section[aria-label="Estatísticas e resultados"] .text-center.mb-20,
-section[aria-label="Estatísticas e resultados"] h2,
-section[aria-label="Estatísticas e resultados"] p,
-section[aria-label*="Estatísticas"] .text-center.mb-20,
-section[aria-label*="Estatísticas"] h2,
-section[aria-label*="Estatísticas"] p {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  color: #FFFFFF !important;
+section[aria-label="Estatísticas"] h2 {
+  color: #1d1d1f !important;
 }
 
-section[aria-label="Estatísticas e resultados"] h2,
-section[aria-label*="Estatísticas"] h2 {
-  font-size: clamp(1.5rem, 4vw, 3rem) !important;
-  font-weight: 600 !important;
-  line-height: 1.2 !important;
-  margin-bottom: 1.5rem !important;
-  color: #FFFFFF !important;
+section[aria-label="Estatísticas"] .text-5xl,
+section[aria-label="Estatísticas"] .text-6xl {
+  color: #1d1d1f !important;
 }
 
-section[aria-label="Estatísticas e resultados"] p,
-section[aria-label*="Estatísticas"] p {
-  font-size: clamp(1rem, 2vw, 1.25rem) !important;
-  line-height: 1.7 !important;
-  opacity: 0.95 !important;
-  color: #FFFFFF !important;
-}
-
-section[style*="background: linear-gradient(135deg, #FF7A00"] h2,
-section[style*="background:linear-gradient(135deg, #FF7A00"] h2,
-section[style*="background: linear-gradient(135deg, #FF7A00"] p,
-section[style*="background:linear-gradient(135deg, #FF7A00"] p,
-section[style*="background: linear-gradient(135deg, #FF7A00"] span,
-section[style*="background:linear-gradient(135deg, #FF7A00"] span {
-  color: #FFFFFF !important;
+section[aria-label="Estatísticas"] .text-sm {
+  color: #86868b !important;
 }
 
 /* Carrossel de Clientes e Parceiros - Estilo Clean Corporativo */
@@ -2193,7 +2142,7 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
 }
 
 #clientes-list .flex:hover {
-  border-color: #F28C28 !important;
+  border-color: #E07B24 !important;
 }
 
 /* Galeria de Obras - Botões fixos */
@@ -2232,19 +2181,71 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
 
 /* Ajustes gerais para mobile */
 @media (max-width: 768px) {
+  /* Prevenir overflow - CRÍTICO */
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  * {
+    max-width: 100vw;
+  }
+
   /* Melhorar legibilidade */
   body {
     font-size: 16px !important;
-    line-height: 1.6 !important;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-size-adjust: 100%;
+    line-height: 1.5 !important;
   }
 
-  /* Espaçamentos reduzidos */
+  /* Seções - overflow e padding */
   section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding: 2.5rem 1rem !important;
+    overflow: hidden !important;
+  }
+
+  /* Todos os containers */
+  .max-w-\[980px\],
+  .max-w-\[1400px\],
+  .max-w-7xl,
+  .max-w-6xl,
+  [class*="max-w-"] {
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    overflow: hidden !important;
+  }
+
+  /* Textos - prevenir overflow */
+  h1, h2, h3, h4, h5, h6, p, span, a {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+
+  /* Botões - largura controlada */
+  button,
+  a[class*="inline-flex"],
+  .btn-primary,
+  .btn-secondary {
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Grids responsivos */
+  .grid {
+    gap: 1rem !important;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Imagens */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 
   /* Headings responsivos */
@@ -2477,31 +2478,39 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
     font-size: 0.875rem !important;
   }
 
-  /* Estatísticas Mobile */
-  section[aria-label="Estatísticas e resultados"],
-  section[aria-label*="Estatísticas"] {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+  /* Estatísticas Mobile - Estilo Apple */
+  section[aria-label="Estatísticas"] {
+    padding: 3rem 1rem !important;
+    background: #f5f5f7 !important;
   }
 
-  .grid.grid-cols-2.gap-8.md\:grid-cols-4 {
-    gap: 1.5rem !important;
+  section[aria-label="Estatísticas"] h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    color: #1d1d1f !important;
+    line-height: 1.2 !important;
   }
 
-  section[aria-label="Estatísticas e resultados"] h2,
-  section[aria-label*="Estatísticas"] h2 {
-    font-size: clamp(1.375rem, 5.5vw, 1.75rem) !important;
-    margin-bottom: 1rem !important;
+  section[aria-label="Estatísticas"] .grid {
+    gap: 2rem !important;
   }
 
-  section[aria-label="Estatísticas e resultados"] .text-4xl,
-  section[aria-label="Estatísticas e resultados"] .text-5xl,
-  section[aria-label="Estatísticas e resultados"] .text-6xl {
-    font-size: clamp(1.75rem, 6vw, 2.25rem) !important;
+  section[aria-label="Estatísticas"] .text-5xl,
+  section[aria-label="Estatísticas"] .text-6xl {
+    font-size: 2rem !important;
+    color: #1d1d1f !important;
+    line-height: 1 !important;
+    margin-bottom: 0.25rem !important;
   }
 
-  section[aria-label="Estatísticas e resultados"] .text-sm {
+  section[aria-label="Estatísticas"] .text-sm {
     font-size: 0.75rem !important;
+    color: #86868b !important;
+  }
+
+  section[aria-label="Estatísticas"] .text-xs {
+    font-size: 0.75rem !important;
+    color: #86868b !important;
   }
 
   /* Footer Mobile */
@@ -2744,7 +2753,7 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
   a,
   button,
   [role="button"] {
-    -webkit-tap-highlight-color: rgba(242, 140, 40, 0.3);
+    -webkit-tap-highlight-color: rgba(224, 123, 36, 0.3);
     touch-action: manipulation;
   }
 
@@ -2913,29 +2922,29 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
 /* Seção Contato - Forçar textos pretos em cards brancos */
 #contato div[style*="background-color: #FFFFFF"],
 #contato div[style*="background-color:#FFFFFF"] {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
-#contato div[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
-#contato div[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #525252"],
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #1A1A1A"],
 #contato div[style*="background-color: #FFFFFF"] span[style*="color: #6B7280"],
-#contato div[style*="background-color: #FFFFFF"] h3[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] a[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] .text-xs[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] .text-base[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] .text-base[style*="color: #4A4A4A"],
-#contato div[style*="background-color: #FFFFFF"] .text-sm[style*="color: #1C1C1C"],
+#contato div[style*="background-color: #FFFFFF"] h3[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] a[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] .text-xs[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] .text-base[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] .text-base[style*="color: #525252"],
+#contato div[style*="background-color: #FFFFFF"] .text-sm[style*="color: #1A1A1A"],
 #contato div[style*="background-color: #FFFFFF"] .text-sm[style*="color: #6B7280"],
-#contato div[style*="background-color: #FFFFFF"] .text-xl[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] .text-lg[style*="color: #1C1C1C"],
-#contato div[style*="background-color: #FFFFFF"] .text-2xl[style*="color: #1C1C1C"] {
-  color: #1C1C1C !important;
+#contato div[style*="background-color: #FFFFFF"] .text-xl[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] .text-lg[style*="color: #1A1A1A"],
+#contato div[style*="background-color: #FFFFFF"] .text-2xl[style*="color: #1A1A1A"] {
+  color: #1A1A1A !important;
 }
 
-#contato div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
-#contato div[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"] {
-  color: #4A4A4A !important;
+#contato div[style*="background-color: #FFFFFF"] p[style*="color: #525252"],
+#contato div[style*="background-color: #FFFFFF"] span[style*="color: #525252"] {
+  color: #525252 !important;
 }
 
 #contato div[style*="background-color: #FFFFFF"] span[style*="color: #6B7280"],
@@ -2948,24 +2957,24 @@ section[style*="background:linear-gradient(135deg, #FF7A00"] span {
 #sobre div[style*="background-color:#FFFFFF"],
 #sobre article[style*="background-color: #FFFFFF"],
 #sobre article[style*="background-color:#FFFFFF"] {
-  color: #1C1C1C !important;
+  color: #1A1A1A !important;
 }
 
-#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
-#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
-#sobre article[style*="background-color: #FFFFFF"] h3[style*="color: #1C1C1C"],
-#sobre article[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
-#sobre article[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"],
-#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #1C1C1C"],
-#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
-#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #1C1C1C"],
-#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"] {
-  color: #1C1C1C !important;
+#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #1A1A1A"],
+#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #525252"],
+#sobre article[style*="background-color: #FFFFFF"] h3[style*="color: #1A1A1A"],
+#sobre article[style*="background-color: #FFFFFF"] span[style*="color: #1A1A1A"],
+#sobre article[style*="background-color: #FFFFFF"] span[style*="color: #525252"],
+#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #1A1A1A"],
+#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #525252"],
+#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #1A1A1A"],
+#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #525252"] {
+  color: #1A1A1A !important;
 }
 
-#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
-#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #4A4A4A"],
-#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #4A4A4A"] {
-  color: #4A4A4A !important;
+#sobre article[style*="background-color: #FFFFFF"] p[style*="color: #525252"],
+#sobre div[style*="background-color: #FFFFFF"] p[style*="color: #525252"],
+#sobre div[style*="background-color: #FFFFFF"] span[style*="color: #525252"] {
+  color: #525252 !important;
 }
 

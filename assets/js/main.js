@@ -58,6 +58,10 @@ if (ctaTop) {
 
 // ScrollReveal simples usando GSAP + ScrollTrigger, inspirado no snippet fornecido.
 const setupScrollReveal = () => {
+  // Não aplicar na página de obras
+  const currentPath = window.location.pathname || window.location.href;
+  if (currentPath.includes('obras')) return;
+
   if (!window.gsap || !window.ScrollTrigger) return;
   gsap.registerPlugin(ScrollTrigger);
 
@@ -193,12 +197,13 @@ window.addEventListener('load', setupLogoLoop);
 
 // Animações de entrada para seções com micro-interações suaves
 const setupSectionAnimations = () => {
-  // Verificar se está na página de contato - se sim, não aplicar animações
+  // Verificar se está na página de contato ou obras - se sim, não aplicar animações
   const currentPath = window.location.pathname || window.location.href;
   const isContatoPage = currentPath.includes('contato') || currentPath.includes('contato.html') || document.querySelector('body')?.classList.contains('contato-page');
-  
-  if (isContatoPage) {
-    return; // Não aplicar animações na página de contato
+  const isObrasPage = currentPath.includes('obras') || currentPath.includes('obras.html');
+
+  if (isContatoPage || isObrasPage) {
+    return; // Não aplicar animações nestas páginas
   }
 
   if (!window.gsap || !window.ScrollTrigger) return;

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="MMKK Engenharia & Construções - Serviços completos de construção civil, reformas, sistemas elétricos e hidráulicos, e gestão de obras. 10 anos de experiência.">
+  <meta name="keywords" content="construção civil, reformas, sistemas elétricos, gestão de obras, engenharia, Tupã, MMKK">
+  <title>Nossos Serviços | MMKK Engenharia & Construções</title>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mmkk.com.br/servicos.html">
+  <meta property="og:title" content="Nossos Serviços | MMKK Engenharia & Construções">
+  <meta property="og:description" content="Serviços completos de construção civil, reformas, sistemas elétricos e hidráulicos, e gestão de obras. 10 anos de experiência.">
+  <meta property="og:image" content="https://mmkk.com.br/fotos%20em%20geral/Logo.jpeg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mmkk.com.br/servicos.html">
+  <meta property="twitter:title" content="Nossos Serviços | MMKK Engenharia & Construções">
+  <meta property="twitter:description" content="Serviços completos de construção civil, reformas, sistemas elétricos e hidráulicos, e gestão de obras. 10 anos de experiência.">
+  <meta property="twitter:image" content="https://mmkk.com.br/fotos%20em%20geral/Logo.jpeg">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Construção Civil e Engenharia",
+    "provider": {
+      "@type": "Organization",
+      "name": "MMKK Engenharia & Construções"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Tupã",
+      "addressRegion": "SP"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços de Engenharia",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Construção Civil"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reformas"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sistemas Elétricos e Hidráulicos"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Gestão de Obras"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="./fotos%20em%20geral/Logo.jpeg">
+  <link rel="apple-touch-icon" href="./fotos%20em%20geral/Logo.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="./fotos%20em%20geral/Logo.jpeg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/tailwind-config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-brand-600 focus:text-white focus:rounded-lg focus:font-semibold focus:shadow-lg">
+    Pular para o conteúdo principal
+  </a>
+  
+  <header id="main-header" class="fixed inset-x-0 top-0 z-50 backdrop-blur-lg border-b transition-all duration-300 header-transparent" role="banner">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
+      <a href="./index.html" 
+         class="flex items-center gap-3 transition-all duration-200 hover:opacity-80 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 rounded-lg p-1" 
+         aria-label="MMKK Engenharia - Página inicial">
+        <img src="./fotos%20em%20geral/Logo.jpeg" 
+             alt="Logo MMKK Engenharia e Construções" 
+             class="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" 
+             loading="eager"
+             width="48"
+             height="48">
+        <div class="leading-tight">
+          <p class="text-base font-bold uppercase tracking-wide header-logo-text">MMKK</p>
+          <p class="text-xs font-bold uppercase tracking-wider header-logo-subtext">Engenharia & Construções</p>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-1 text-xs font-bold uppercase tracking-wider lg:flex" aria-label="Navegação principal">
+        <a class="relative px-4 py-2.5 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 header-nav-link"
+           href="./index.html">
+          <span class="relative z-10 block text-center">Início</span>
+        </a>
+        <a class="relative px-4 py-2.5 rounded-lg transition-all duration-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 header-nav-link header-nav-active"
+           href="./servicos.html"
+           aria-current="page">
+          <span class="relative z-10 block text-center">Serviços</span>
+        </a>
+        <a class="relative px-4 py-2.5 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 header-nav-link"
+           href="./obras.html">
+          <span class="relative z-10 block text-center">Obras</span>
+        </a>
+        <a class="relative px-4 py-2.5 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 header-nav-link"
+           href="./contato.html">
+          <span class="relative z-10 block text-center">Contato</span>
+        </a>
+      </nav>
+      <div class="hidden items-center gap-4 lg:flex">
+        <button id="cta-top"
+                class="rounded-lg px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]"
+                style="background-color: #E07B24; box-shadow: 0 4px 14px 0 rgba(224, 123, 36, 0.25);"
+                aria-label="Receber orçamento gratuito">
+          Orçamento
+        </button>
+      </div>
+      <button id="menu-btn"
+              class="rounded-lg p-2 ring-1 transition-all hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 lg:hidden header-menu-btn"
+              aria-label="Abrir menu de navegação"
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+        <span class="sr-only">Abrir menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" 
+         class="hidden border-t backdrop-blur-lg lg:hidden header-mobile-menu" 
+         role="navigation"
+         aria-label="Menu mobile">
+      <div class="mx-auto flex max-w-7xl flex-col px-4 py-4 gap-2">
+        <a class="px-4 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2"
+           href="./index.html"
+           style="color: #1A1A1A;">
+          Início
+        </a>
+        <a class="px-4 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2"
+           href="./servicos.html"
+           style="color: #E07B24; background-color: rgba(224, 123, 36, 0.08);"
+           aria-current="page">
+          Serviços
+        </a>
+        <a class="px-4 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2"
+           href="./obras.html"
+           style="color: #1A1A1A;">
+          Obras
+        </a>
+        <a class="px-4 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2"
+           href="./contato.html"
+           style="color: #1A1A1A;">
+          Contato
+        </a>
+        <button class="mt-2 rounded-lg px-4 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98]"
+                style="background-color: #E07B24; box-shadow: 0 4px 14px 0 rgba(224, 123, 36, 0.25);"
+                onclick="window.location.href='./contato.html'">
+          Orçamento
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="relative isolate min-h-[70vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+             alt="Construção civil"
+             class="h-full w-full object-cover"
+             loading="eager">
+      </div>
+      <div class="relative z-10 mx-auto w-full max-w-7xl px-6 pt-32 pb-24 lg:px-8 lg:pt-40 lg:pb-32">
+        <div class="max-w-4xl">
+          <h1 class="mb-8">
+            <span class="block text-7xl sm:text-8xl lg:text-[10rem] font-bold uppercase tracking-tight" style="color: #FFFFFF; letter-spacing: -0.02em; line-height: 0.9; text-shadow: 2px 4px 12px rgba(0,0,0,0.5);">
+              NOSSOS
+            </span>
+            <span class="inline-block mt-3 px-6 py-2 text-6xl sm:text-7xl lg:text-9xl font-bold uppercase tracking-tight" style="background-color: #E07B24; color: #FFFFFF; letter-spacing: -0.02em; line-height: 1.1;">
+              SERVIÇOS
+            </span>
+            <span class="block mt-5 text-5xl sm:text-6xl lg:text-7xl font-bold uppercase tracking-wide" style="color: #FFFFFF; letter-spacing: 0.05em; line-height: 1.1; text-shadow: 2px 4px 12px rgba(0,0,0,0.5);">
+              DO PROJETO AO ACABAMENTO
+            </span>
+          </h1>
+          <div class="flex flex-wrap items-center gap-4 mt-12">
+            <a href="./contato.html"
+               class="group inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#E07B24] focus:ring-offset-2 focus:ring-offset-black/50"
+               style="background-color: #E07B24; color: #FFFFFF;"
+               aria-label="Falar com engenheiro">
+              <span>Falar com engenheiro</span>
+              <svg class="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+            <a href="./obras.html"
+               class="inline-flex items-center justify-center rounded-lg border-2 px-8 py-4 text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black/50"
+               style="border-color: #FFFFFF; color: #FFFFFF;">
+              Ver obras
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="mx-auto max-w-7xl px-4 pt-8 lg:px-8" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider" style="color: #9B9B9B;">
+        <li>
+          <a href="./index.html" class="transition-colors duration-200 hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 rounded" style="color: #525252;">Início</a>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </li>
+        <li aria-current="page" style="color: #1A1A1A;">Serviços</li>
+      </ol>
+    </nav>
+
+    <section class="relative mx-auto max-w-7xl px-4 pt-8 pb-24 lg:px-8 lg:pt-8 lg:pb-28 overflow-hidden" style="background-color: #FFFFFF;" aria-label="Serviços oferecidos">
+      <!-- Filtros por Segmento -->
+      <div class="mb-12 flex flex-wrap items-center gap-4">
+        <p class="text-xs font-bold uppercase tracking-wider" style="color: #1A1A1A;">Filtrar por segmento:</p>
+        <button
+          class="servico-filter-btn active px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2"
+          data-filter="all"
+          style="background-color: #E07B24; color: #FFFFFF; box-shadow: 0 2px 8px rgba(224, 123, 36, 0.25);"
+        >
+          Todos
+        </button>
+        <button
+          class="servico-filter-btn px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2"
+          data-filter="hospitalar"
+          style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); color: #1A1A1A; border: 1px solid rgba(224, 123, 36, 0.15);"
+        >
+          Hospitalar
+        </button>
+        <button
+          class="servico-filter-btn px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2"
+          data-filter="industrial"
+          style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); color: #1A1A1A; border: 1px solid rgba(224, 123, 36, 0.15);"
+        >
+          Industrial
+        </button>
+      </div>
+      <div class="relative z-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3" id="servicos-grid">
+        <article class="servico-item group p-8 rounded-xl border transition-all duration-300 hover:border-opacity-60 hover:shadow-xl hover:-translate-y-2 focus-within:ring-2 focus-within:ring-brand-600 focus-within:ring-offset-2" data-category="hospitalar industrial" style="border-color: #E5E5E5; background-color: #FFFFFF;">
+          <div class="inline-flex rounded-xl p-4 mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); border: 1px solid rgba(224, 123, 36, 0.15);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #E07B24;" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24;">Construção</p>
+          <h3 class="text-base font-bold uppercase tracking-wide mb-3 leading-[1.3] transition-colors duration-300 group-hover:text-brand-600" style="color: #1A1A1A;">Civil completa</h3>
+          <p class="text-xs font-bold uppercase tracking-wide leading-[1.7]" style="color: #525252;">Obras industriais e hospitalares do projeto à entrega, com qualidade e agilidade na execução.</p>
+        </article>
+
+        <article class="servico-item group p-8 rounded-xl border transition-all duration-300 hover:border-opacity-60 hover:shadow-xl hover:-translate-y-2 focus-within:ring-2 focus-within:ring-brand-600 focus-within:ring-offset-2" data-category="hospitalar industrial" style="border-color: #E5E5E5; background-color: #FFFFFF;">
+          <div class="inline-flex rounded-xl p-4 mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); border: 1px solid rgba(224, 123, 36, 0.15);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #E07B24;" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24;">Estruturas</p>
+          <h3 class="text-base font-bold uppercase tracking-wide mb-3 leading-tight transition-colors duration-300 group-hover:text-brand-600" style="color: #1A1A1A;">Reforço e recuperação</h3>
+          <p class="text-xs font-bold uppercase tracking-wide leading-[1.7]" style="color: #525252;">Reforço estrutural em hospitais e indústrias sem interromper a operação.</p>
+        </article>
+
+        <article class="servico-item group p-8 rounded-xl border transition-all duration-300 hover:border-opacity-60 hover:shadow-xl hover:-translate-y-2 focus-within:ring-2 focus-within:ring-brand-600 focus-within:ring-offset-2" data-category="hospitalar industrial" style="border-color: #E5E5E5; background-color: #FFFFFF;">
+          <div class="inline-flex rounded-xl p-4 mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); border: 1px solid rgba(224, 123, 36, 0.15);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #E07B24;" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+            </svg>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24;">Sistemas</p>
+          <h3 class="text-base font-bold uppercase tracking-wide mb-3 leading-tight transition-colors duration-300 group-hover:text-brand-600" style="color: #1A1A1A;">Elétrica e hidráulica</h3>
+          <p class="text-xs font-bold uppercase tracking-wide leading-[1.7]" style="color: #525252;">Instalações para ambientes hospitalares e plantas industriais com segurança e eficiência.</p>
+        </article>
+
+        <article class="servico-item group p-8 rounded-xl border transition-all duration-300 hover:border-opacity-60 hover:shadow-xl hover:-translate-y-2 focus-within:ring-2 focus-within:ring-brand-600 focus-within:ring-offset-2" data-category="hospitalar industrial" style="border-color: #E5E5E5; background-color: #FFFFFF;">
+          <div class="inline-flex rounded-xl p-4 mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); border: 1px solid rgba(224, 123, 36, 0.15);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #E07B24;" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24;">Reformas</p>
+          <h3 class="text-base font-bold uppercase tracking-wide mb-3 leading-tight transition-colors duration-300 group-hover:text-brand-600" style="color: #1A1A1A;">Modernizações</h3>
+          <p class="text-xs font-bold uppercase tracking-wide leading-[1.7]" style="color: #525252;">Reformas em hospitais e indústrias com planejamento para minimizar interferências.</p>
+        </article>
+
+        <article class="servico-item group p-8 rounded-xl border transition-all duration-300 hover:border-opacity-60 hover:shadow-xl hover:-translate-y-2 focus-within:ring-2 focus-within:ring-brand-600 focus-within:ring-offset-2" data-category="hospitalar industrial" style="border-color: #E5E5E5; background-color: #FFFFFF;">
+          <div class="inline-flex rounded-xl p-4 mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); border: 1px solid rgba(224, 123, 36, 0.15);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #E07B24;" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 010 2H6a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1v-4a1 1 0 112 0v4a3 3 0 01-3 3H6a3 3 0 01-3-3V6a3 3 0 013-3h4a1 1 0 010 2z" />
+            </svg>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24;">Arquitetura</p>
+          <h3 class="text-base font-bold uppercase tracking-wide mb-3 leading-tight transition-colors duration-300 group-hover:text-brand-600" style="color: #1A1A1A;">Projetos integrados</h3>
+          <p class="text-xs font-bold uppercase tracking-wide leading-[1.7]" style="color: #525252;">Projetos para hospitais e indústrias com compatibilização desde o anteprojeto.</p>
+        </article>
+
+        <article class="servico-item group p-8 rounded-xl border transition-all duration-300 hover:border-opacity-60 hover:shadow-xl hover:-translate-y-2 focus-within:ring-2 focus-within:ring-brand-600 focus-within:ring-offset-2" data-category="industrial" style="border-color: #E5E5E5; background-color: #FFFFFF;">
+          <div class="inline-flex rounded-xl p-4 mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%); border: 1px solid rgba(224, 123, 36, 0.15);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #E07B24;" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24;">Metálicas</p>
+          <h3 class="text-base font-bold uppercase tracking-wide mb-3 leading-tight transition-colors duration-300 group-hover:text-brand-600" style="color: #1A1A1A;">Estruturas e coberturas</h3>
+          <p class="text-xs font-bold uppercase tracking-wide leading-[1.7]" style="color: #525252;">Galpões e estruturas industriais com performance e segurança.</p>
+        </article>
+
+        <article class="servico-item group md:col-span-2 lg:col-span-3 p-8 rounded-xl border transition-all duration-300 hover:border-opacity-60 hover:shadow-xl hover:-translate-y-1 focus-within:ring-2 focus-within:ring-brand-600 focus-within:ring-offset-2" data-category="hospitalar industrial" style="border-color: #E5E5E5; background-color: #FFFFFF;">
+          <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div class="flex-1">
+              <div class="inline-flex rounded-xl p-4 mb-6 transition-all duration-300 group-hover:scale-110" style="background-color: #F8F8F8;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #E07B24;" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                </svg>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #E07B24;">Gestão de obra</p>
+              <h3 class="text-base font-bold uppercase tracking-wide mb-3 leading-tight transition-colors duration-300 group-hover:text-brand-600" style="color: #1A1A1A;">Planejamento e controle</h3>
+              <p class="text-xs font-bold uppercase tracking-wide leading-[1.7]" style="color: #525252;">Cronograma físico-financeiro, equipes e fornecedores coordenados de ponta a ponta.</p>
+            </div>
+            <button
+              class="mt-4 w-full rounded-lg px-8 py-4 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:shadow-xl hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 active:scale-[0.98] md:mt-0 md:w-auto"
+              style="background-color: #E07B24; box-shadow: 0 4px 14px 0 rgba(224, 123, 36, 0.25);"
+              onclick="window.location.href='./contato.html'"
+              aria-label="Agendar visita técnica">
+              Agendar visita gratuita
+            </button>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <!-- Depoimento Destaque -->
+    <section class="relative py-16 lg:py-20 overflow-hidden" style="background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);" aria-label="Depoimento">
+      <div class="relative z-10 mx-auto max-w-4xl px-4 lg:px-8 text-center">
+        <svg class="w-12 h-12 mx-auto mb-6 opacity-30" fill="#E07B24" viewBox="0 0 24 24">
+          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+        <blockquote class="text-base md:text-lg lg:text-xl font-bold uppercase tracking-wide leading-relaxed mb-8" style="color: #FFFFFF;">
+          "A MMKK entende as normas ANVISA e entrega reformas hospitalares que outras construtoras não conseguem. Profissionalismo que faz diferença."
+        </blockquote>
+        <div class="flex items-center justify-center gap-4">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background-color: #E07B24;">CS</div>
+          <div class="text-left">
+            <p class="text-xs font-bold uppercase tracking-wider" style="color: #FFFFFF;">Dr. Carlos Silva</p>
+            <p class="text-xs font-bold uppercase tracking-wide" style="color: #9B9B9B;">Diretor Clínico - Santa Casa de Tupã</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t" style="border-color: #2A2A2A; background-color: #1F1F1F !important;" role="contentinfo">
+    <div class="mx-auto max-w-7xl px-4 py-8 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-5">
+        <!-- Logo e Descrição -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="./fotos%20em%20geral/Logo.jpeg" alt="Logo MMKK Engenharia e Construções" class="h-10 w-auto object-contain" loading="lazy">
+            <div>
+              <p class="text-lg font-bold uppercase tracking-wide leading-tight" style="color: #FFFFFF;">MMKK</p>
+              <p class="text-xs font-bold uppercase tracking-wider leading-tight" style="color: #FFFFFF;">Engenharia & Construções</p>
+            </div>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-wide max-w-md leading-relaxed" style="color: #FFFFFF; line-height: 1.6;">
+            Engenharia, gestão de obras e entregas com excelência. 10 anos transformando projetos em realidade.
+          </p>
+        </div>
+
+        <!-- Navegação -->
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #FFFFFF; letter-spacing: 0.15em;">Navegação</p>
+          <nav class="flex flex-col gap-2" aria-label="Navegação do rodapé">
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./index.html">
+              Início
+            </a>
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./servicos.html">
+              Serviços
+            </a>
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./obras.html">
+              Obras
+            </a>
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./contato.html">
+              Contato
+            </a>
+          </nav>
+        </div>
+
+        <!-- Serviços -->
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #FFFFFF; letter-spacing: 0.15em;">Serviços</p>
+          <nav class="flex flex-col gap-2" aria-label="Serviços oferecidos">
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./servicos.html">
+              Construção Civil
+            </a>
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./servicos.html">
+              Reformas
+            </a>
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./servicos.html">
+              Sistemas
+            </a>
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="./servicos.html">
+              Gestão
+            </a>
+          </nav>
+        </div>
+
+        <!-- Contato -->
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.15em] mb-3" style="color: #FFFFFF; letter-spacing: 0.15em;">Contato</p>
+          <div class="flex flex-col gap-2 mb-4">
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="tel:+554499326286"
+               aria-label="Ligar para (44) 9932-6286">
+              (44) 9932-6286
+            </a>
+            <a class="text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 hover:text-brand-600 transition-colors"
+               style="color: #FFFFFF; line-height: 1.5; display: block;"
+               href="mailto:e.makoto@mmkk.com.br"
+               aria-label="Enviar e-mail para e.makoto@mmkk.com.br">
+              e.makoto@mmkk.com.br
+            </a>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.15em] mb-2" style="color: #FFFFFF; letter-spacing: 0.15em;">Redes Sociais</p>
+            <a href="https://wa.me/554499326286" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2" 
+               style="background-color: #25D366; color: #FFFFFF;"
+               aria-label="Falar via WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a9.94 9.94 0 0 0-7.07 2.93A9.94 9.94 0 0 0 2 12c0 1.7.43 3.34 1.25 4.79L2 22l5.34-1.21A10.02 10.02 0 0 0 12 22c2.67 0 5.18-1.04 7.07-2.93A9.94 9.94 0 0 0 22 12c0-2.67-1.04-5.18-2.93-7.07A9.94 9.94 0 0 0 12 2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t py-3" style="border-color: #2A2A2A;">
+      <div class="mx-auto max-w-7xl px-4 lg:px-8">
+        <p class="text-center text-xs font-bold uppercase tracking-wide leading-relaxed" style="color: #FFFFFF;" id="footer-year">
+          © MMKK Engenharia & Construções <span id="footer-year-number"></span>. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a
+    href="https://wa.me/554499326286?text=Olá,%20gostaria%20de%20falar%20sobre%20um%20projeto."
+    class="fixed bottom-6 right-6 z-[9999] flex items-center justify-center w-14 h-14 rounded-full text-white shadow-lg transition-transform duration-300 hover:scale-110"
+    style="background-color: #25D366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar via WhatsApp com MMKK Engenharia"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="sr-only">Falar via WhatsApp</span>
+  </a>
+
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Filtro de serviços por segmento
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterBtns = document.querySelectorAll('.servico-filter-btn');
+      const servicoItems = document.querySelectorAll('.servico-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const filter = this.dataset.filter;
+
+          // Atualizar botões ativos
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.style.backgroundColor = '';
+            b.style.color = '#1A1A1A';
+            b.style.background = 'linear-gradient(135deg, #FEF7F0 0%, #FDF3EA 100%)';
+            b.style.boxShadow = 'none';
+          });
+
+          this.classList.add('active');
+          this.style.backgroundColor = '#E07B24';
+          this.style.background = '#E07B24';
+          this.style.color = '#FFFFFF';
+          this.style.boxShadow = '0 2px 8px rgba(224, 123, 36, 0.25)';
+
+          // Filtrar serviços
+          servicoItems.forEach(item => {
+            const categories = item.dataset.category || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              item.style.display = '';
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            } else {
+              item.style.opacity = '0';
+              item.style.transform = 'scale(0.95)';
+              setTimeout(() => {
+                if (!categories.includes(filter) && filter !== 'all') {
+                  item.style.display = 'none';
+                }
+              }, 200);
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
