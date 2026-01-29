@@ -5,9 +5,9 @@ function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slides = [
-    './fotos em geral/626aa8ee285b367586fbdc7a20.jpeg',
-    './fotos em geral/engenharia-800x563.jpg',
-    './fotos em geral/engenharia-civil-min.jpg'
+    '/fotos em geral/626aa8ee285b367586fbdc7a20.jpeg',
+    '/fotos em geral/engenharia-800x563.jpg',
+    '/fotos em geral/engenharia-civil-min.jpg'
   ]
 
   useEffect(() => {

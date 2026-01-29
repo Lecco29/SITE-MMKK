@@ -7,12 +7,12 @@ function ClientesCarousel() {
   const [isPaused, setIsPaused] = useState(false)
 
   const logos = [
-    { src: './fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: './fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: './fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: './fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: './fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: './fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' }
+    { src: '/fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: '/fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: '/fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: '/fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: '/fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: '/fotos em geral/images.png', alt: 'Santa Casa de Misericórdia de Tupã' }
   ]
 
   useEffect(() => {
