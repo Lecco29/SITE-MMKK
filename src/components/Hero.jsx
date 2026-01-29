@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const baseUrl = import.meta.env.BASE_URL
 
   const slides = [
-    '/fotos/hero1.jpeg',
-    '/fotos/hero2.jpg',
-    '/fotos/hero3.jpg'
+    `${baseUrl}fotos/hero1.jpeg`,
+    `${baseUrl}fotos/hero2.jpg`,
+    `${baseUrl}fotos/hero3.jpg`
   ]
 
   useEffect(() => {

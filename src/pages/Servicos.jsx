@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Servicos() {
+  const baseUrl = import.meta.env.BASE_URL
+
   const servicos = [
     {
       icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
@@ -31,7 +33,7 @@ function Servicos() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/fotos/hero2.jpg"
+            src={`${baseUrl}fotos/hero2.jpg`}
             alt="Serviços MMKK"
             className="h-full w-full object-cover"
           />

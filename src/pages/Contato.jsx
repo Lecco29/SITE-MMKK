@@ -1,13 +1,15 @@
 import React from 'react'
 
 function Contato() {
+  const baseUrl = import.meta.env.BASE_URL
+
   return (
     <>
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/fotos/contato-bg.jpg"
+            src={`${baseUrl}fotos/contato-bg.jpg`}
             alt="Contato MMKK"
             className="h-full w-full object-cover"
           />

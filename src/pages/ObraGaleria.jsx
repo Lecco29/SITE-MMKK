@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom'
 function ObraGaleria() {
   const { id } = useParams()
   const [selectedImage, setSelectedImage] = useState(null)
+  const baseUrl = import.meta.env.BASE_URL
 
   const obrasData = {
     maternidade: {
@@ -48,7 +49,7 @@ function ObraGaleria() {
   }
 
   const getImageUrl = (imageName) => {
-    return `/obras_realizadas/${obra.folder}/${imageName}`
+    return `${baseUrl}obras_realizadas/${obra.folder}/${imageName}`
   }
 
   const openLightbox = (index) => {

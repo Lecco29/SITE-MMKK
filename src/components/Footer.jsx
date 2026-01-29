@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
+  const baseUrl = import.meta.env.BASE_URL
 
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
@@ -11,7 +12,7 @@ function Footer() {
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/fotos/logo.jpeg" alt="Logo MMKK" className="h-10 w-auto object-contain" />
+              <img src={`${baseUrl}fotos/logo.jpeg`} alt="Logo MMKK" className="h-10 w-auto object-contain" />
               <div>
                 <p className="text-base font-bold uppercase tracking-wide text-white">MMKK</p>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400">Engenharia & Construções</p>

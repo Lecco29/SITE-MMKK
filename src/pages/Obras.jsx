@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Obras() {
   const [filter, setFilter] = useState('all')
+  const baseUrl = import.meta.env.BASE_URL
 
   const obras = [
     {
@@ -10,7 +11,7 @@ function Obras() {
       title: 'Maternidade',
       client: 'Santa Casa de Tupã',
       description: 'Revitalização completa da maternidade com novos fluxos, salas de atendimento e áreas técnicas modernizadas.',
-      image: '/obras_realizadas/maternidade/01.jpeg',
+      image: `${baseUrl}obras_realizadas/maternidade/01.jpeg`,
       category: 'hospitalar'
     },
     {
@@ -18,7 +19,7 @@ function Obras() {
       title: 'UTI C',
       client: 'Santa Casa de Tupã',
       description: 'Ampliação e modernização da UTI com tecnologia de ponta e fluxos otimizados para melhor atendimento.',
-      image: '/obras_realizadas/uti-c/01.jpeg',
+      image: `${baseUrl}obras_realizadas/uti-c/01.jpeg`,
       category: 'hospitalar'
     },
     {
@@ -26,7 +27,7 @@ function Obras() {
       title: 'Banco de Sangue',
       client: 'Santa Casa de Tupã',
       description: 'Construção completa do banco de sangue seguindo todas as normas técnicas e de biossegurança.',
-      image: '/obras_realizadas/banco-de-sangue/01.jpeg',
+      image: `${baseUrl}obras_realizadas/banco-de-sangue/01.jpeg`,
       category: 'hospitalar'
     }
   ]
@@ -39,7 +40,7 @@ function Obras() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/fotos/obras-bg.jpg"
+            src={`${baseUrl}fotos/obras-bg.jpg`}
             alt="Obras MMKK"
             className="h-full w-full object-cover"
           />

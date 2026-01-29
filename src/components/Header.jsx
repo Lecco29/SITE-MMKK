@@ -5,6 +5,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
+  const baseUrl = import.meta.env.BASE_URL
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
   const closeMenu = () => setIsMenuOpen(false)
@@ -38,7 +39,7 @@ function Header() {
         {/* Logo */}
         <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center gap-3 transition-opacity hover:opacity-80">
           <img
-            src="/fotos/logo.jpeg"
+            src={`${baseUrl}fotos/logo.jpeg`}
             alt="Logo MMKK"
             className="h-10 w-auto object-contain"
           />

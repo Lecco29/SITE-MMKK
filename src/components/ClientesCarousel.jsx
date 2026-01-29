@@ -5,14 +5,15 @@ function ClientesCarousel() {
   const listRef = useRef(null)
   const animationRef = useRef(null)
   const [isPaused, setIsPaused] = useState(false)
+  const baseUrl = import.meta.env.BASE_URL
 
   const logos = [
-    { src: '/fotos/cliente.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: '/fotos/cliente.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: '/fotos/cliente.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: '/fotos/cliente.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: '/fotos/cliente.png', alt: 'Santa Casa de Misericórdia de Tupã' },
-    { src: '/fotos/cliente.png', alt: 'Santa Casa de Misericórdia de Tupã' }
+    { src: `${baseUrl}fotos/cliente.png`, alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: `${baseUrl}fotos/cliente.png`, alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: `${baseUrl}fotos/cliente.png`, alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: `${baseUrl}fotos/cliente.png`, alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: `${baseUrl}fotos/cliente.png`, alt: 'Santa Casa de Misericórdia de Tupã' },
+    { src: `${baseUrl}fotos/cliente.png`, alt: 'Santa Casa de Misericórdia de Tupã' }
   ]
 
   useEffect(() => {
