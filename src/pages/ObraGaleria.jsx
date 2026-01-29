@@ -71,8 +71,8 @@ function ObraGaleria() {
   }
 
   const getImageUrl = (imageName) => {
-    const folder = obra.folder.replace(/ /g, '%20')
-    const file = imageName.replace(/ /g, '%20')
+    const folder = obra.folder.replace(/ /g, ' ')
+    const file = imageName.replace(/ /g, ' ')
     return `/obras_realizadas/${folder}/${file}`
   }
 

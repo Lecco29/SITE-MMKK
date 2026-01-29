@@ -10,7 +10,7 @@ function Obras() {
       title: 'Maternidade',
       client: 'Santa Casa de Tupã',
       description: 'Revitalização completa da maternidade com novos fluxos, salas de atendimento e áreas técnicas modernizadas.',
-      image: '/obras_realizadas/Maternidade%20-%20Santa%20Casa%20de%20Tupã/WhatsApp%20Image%202026-01-07%20at%204.13.31%20PM.jpeg',
+      image: '/obras_realizadas/Maternidade - Santa Casa de Tupã/WhatsApp Image 2026-01-07 at 4.13.31 PM.jpeg',
       category: 'hospitalar'
     },
     {
@@ -18,7 +18,7 @@ function Obras() {
       title: 'UTI C',
       client: 'Santa Casa de Tupã',
       description: 'Ampliação e modernização da UTI com tecnologia de ponta e fluxos otimizados para melhor atendimento.',
-      image: '/obras_realizadas/UTI%20C%20-%20Santa%20Casa%20de%20Tupã/WhatsApp%20Image%202026-01-07%20at%203.54.34%20PM.jpeg',
+      image: '/obras_realizadas/UTI C - Santa Casa de Tupã/WhatsApp Image 2026-01-07 at 3.54.34 PM.jpeg',
       category: 'hospitalar'
     },
     {
@@ -26,7 +26,7 @@ function Obras() {
       title: 'Banco de Sangue',
       client: 'Santa Casa de Tupã',
       description: 'Construção completa do banco de sangue seguindo todas as normas técnicas e de biossegurança.',
-      image: '/obras_realizadas/Banco%20de%20Sangue%20-%20Santa%20Casa%20de%20Tupã/WhatsApp%20Image%202026-01-07%20at%203.53.11%20PM.jpeg',
+      image: '/obras_realizadas/Banco de Sangue - Santa Casa de Tupã/WhatsApp Image 2026-01-07 at 3.53.11 PM.jpeg',
       category: 'hospitalar'
     }
   ]
