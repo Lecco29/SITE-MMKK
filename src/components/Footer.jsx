@@ -18,7 +18,7 @@ function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              10 anos transformando projetos em realidade com qualidade e agilidade.
+              11 anos transformando projetos em realidade com qualidade e agilidade. Especialistas em obras hospitalares e industriais.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ function Footer() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] mb-4 text-orange-500">Serviços</p>
             <nav className="flex flex-col gap-3">
-              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Construção Civil</Link>
+              <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Execução de Obras</Link>
               <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Reformas</Link>
               <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Sistemas</Link>
               <Link className="text-sm text-gray-400 hover:text-white transition-colors" to="/servicos">Gestão de Obra</Link>

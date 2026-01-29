@@ -5,8 +5,8 @@ function Servicos() {
   const servicos = [
     {
       icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
-      title: 'Construção Civil',
-      description: 'Qualidade e agilidade na execução de obras, do projeto à entrega final.'
+      title: 'Execução de Obras',
+      description: 'Qualidade e agilidade na execução de obras hospitalares e industriais.'
     },
     {
       icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
@@ -35,10 +35,9 @@ function Servicos() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-orange-500">Serviços</span>
             <span className="w-8 h-[2px] bg-orange-500"></span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-[1.1] mb-4" style={{letterSpacing: '-0.02em'}}>
-            Soluções
-            <span className="inline-block mx-3 px-3 py-1 bg-orange-500 text-white">completas</span>
-            para sua obra
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-[1.2] mb-4" style={{letterSpacing: '-0.02em'}}>
+            <span className="block">Soluções <span className="inline-block px-3 py-1 bg-orange-500 text-white">completas</span></span>
+            <span className="block">para sua obra</span>
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
             Do projeto ao acabamento, uma equipe completa para cada etapa

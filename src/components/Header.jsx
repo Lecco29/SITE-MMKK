@@ -11,6 +11,12 @@ function Header() {
 
   const isActive = (path) => location.pathname === path
 
+  const handleNavClick = (path) => {
+    if (location.pathname === path) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -30,17 +36,17 @@ function Header() {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-md'}`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 transition-opacity hover:opacity-80">
+        <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center gap-3 transition-opacity hover:opacity-80">
           <img
             src="/fotos em geral/Logo.jpeg"
             alt="Logo MMKK"
             className="h-10 w-auto object-contain"
           />
-          <div className="hidden sm:block">
-            <p className="text-lg font-bold tracking-tight text-gray-900" style={{letterSpacing: '-0.01em'}}>
+          <div>
+            <p className="text-base sm:text-lg font-bold tracking-tight text-gray-900" style={{letterSpacing: '-0.01em'}}>
               MMKK <span className="text-orange-500">Engenharia</span>
             </p>
-            <p className="text-[11px] font-medium text-gray-500 -mt-0.5">Construções & Projetos</p>
+            <p className="text-[10px] sm:text-[11px] font-medium text-gray-500 -mt-0.5">Construções & Projetos</p>
           </div>
         </Link>
 
@@ -50,6 +56,7 @@ function Header() {
             <Link
               key={link.path}
               to={link.path}
+              onClick={() => handleNavClick(link.path)}
               className={`px-4 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${
                 isActive(link.path)
                   ? 'text-orange-500'
@@ -95,7 +102,7 @@ function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                onClick={closeMenu}
+                onClick={() => { closeMenu(); handleNavClick(link.path); }}
                 className={`px-4 py-3 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${
                   isActive(link.path)
                     ? 'bg-orange-50 text-orange-500'

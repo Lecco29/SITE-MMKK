@@ -24,7 +24,7 @@ function Sobre() {
             </div>
 
             <p className="text-base text-gray-600 leading-relaxed max-w-lg">
-              A MMKK entrega obras com planejamento, transparência e equipes especializadas em cada etapa. 10 anos de experiência em projetos hospitalares, corporativos e residenciais.
+              A MMKK entrega obras com planejamento, transparência e equipes especializadas em cada etapa. 11 anos de experiência na execução de obras hospitalares e industriais.
             </p>
 
             {/* Stats Pills */}
@@ -36,7 +36,7 @@ function Sobre() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">10+</p>
+                  <p className="text-xl font-bold text-gray-900">11+</p>
                   <p className="text-xs text-gray-500 uppercase tracking-wider">Anos de mercado</p>
                 </div>
               </div>
@@ -47,7 +47,7 @@ function Sobre() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">500+</p>
+                  <p className="text-xl font-bold text-gray-900">60+</p>
                   <p className="text-xs text-gray-500 uppercase tracking-wider">Projetos entregues</p>
                 </div>
               </div>

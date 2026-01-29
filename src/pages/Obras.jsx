@@ -56,7 +56,7 @@ function Obras() {
               <span className="inline-block mx-3 px-3 py-1 bg-orange-500" style={{boxShadow: '0 4px 20px rgba(0,0,0,0.3)'}}>realizadas</span>
             </h1>
             <p className="text-lg text-white/80 mb-8 max-w-2xl leading-relaxed" style={{textShadow: '0 2px 6px rgba(0,0,0,0.4)'}}>
-              Projetos hospitalares, corporativos e residenciais entregues com excelência, segurança e transparência.
+              Execução de obras hospitalares e industriais com excelência, segurança e transparência.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -82,7 +82,7 @@ function Obras() {
           {/* Filtros */}
           <div className="flex flex-wrap items-center gap-4 mb-12">
             <span className="text-sm font-medium text-gray-500">Filtrar:</span>
-            {['all', 'hospitalar', 'corporativo', 'residencial'].map((opt) => (
+            {['all', 'hospitalar', 'industrial'].map((opt) => (
               <button
                 key={opt}
                 onClick={() => setFilter(opt)}
@@ -117,15 +117,17 @@ function Obras() {
                   <p className="text-xs font-bold uppercase tracking-wider text-orange-500 mb-2">{obra.client}</p>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{obra.title}</h3>
                   <p className="text-sm text-gray-500 leading-relaxed mb-4">{obra.description}</p>
-                  <Link
-                    to="/contato"
-                    className="inline-flex items-center gap-2 text-sm font-bold text-orange-500 hover:gap-3 transition-all"
-                  >
-                    Solicitar orçamento
-                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </Link>
+                  <div className="flex flex-wrap gap-4">
+                    <Link
+                      to={`/obras/${obra.id}`}
+                      className="inline-flex items-center gap-2 text-sm font-bold text-orange-500 hover:gap-3 transition-all"
+                    >
+                      Ver galeria
+                      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
